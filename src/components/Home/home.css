@@ -1,5 +1,5 @@
 #home{
-    height: calc(100vh - 40px);
+    height: calc(100vh - 20px);
     width: 100vw;
     max-width: 75rem;
     margin: 0 auto;
@@ -13,9 +13,9 @@
     position: absolute;
     top: 9rem;
     right: 120;
-    z-index: -1;
+    z-index: 1;
     object-fit: cover;
-    height: 100vh;
+    height: 60vh;
 }
 
 .homeContent{
@@ -39,11 +39,30 @@
 }
 
 .homeParag{
-    font-size: medium;
+    font-size:30px;
     font-weight:100;
 }
 
 .btn{
     background-color:white;
+    margin: 1rem 0;
+    padding: 0rem 2rem;
+    border: none;
+    border-radius: 2rem;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+}
 
+.spanResume{
+    padding-left: 5px;
+    background: transparent;
+}
+
+.btnImg{
+    object-fit: cover;
+    margin: 0 0.25rem;
+    padding: 0rem;
+    width: 2rem;
+    background-color: transparent;
 }

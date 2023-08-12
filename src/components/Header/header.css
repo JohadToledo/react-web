@@ -1,0 +1,14 @@
+.header-content{
+    display: flex;
+    flex-direction: row;
+    /* width: 95vw; */
+    justify-content: space-between;
+    background-color: #1b1b32;
+    color: #ffeeffee;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 25vw;
+    }
