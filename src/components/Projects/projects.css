@@ -1,7 +1,7 @@
 #projects{
     overflow: hidden;
     max-width: 75rem;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     height: 150vh;
 }
 
@@ -25,6 +25,8 @@
     flex-direction: row;
     align-content: space-around;
     justify-content: space-around;
+    
+    
 }
 
 .project-item-div{
