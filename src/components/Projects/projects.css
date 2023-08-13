@@ -1,8 +1,8 @@
 #projects{
     overflow: hidden;
     max-width: 75rem;
-    height: 100vh;
     border: 1px solid red;
+    height: 150vh;
 }
 
 .container{
@@ -10,20 +10,29 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 100%;
+}
+
+.projects-title{
+    margin: 50px;
 }
 
 .project-items{
     display: flex;
     flex-wrap: wrap;
-    width: 600px;
-    flex-wrap: wrap;
+    height: 100vh;
     margin: 4rem;
+    flex-direction: row;
+    align-content: space-around;
+    justify-content: space-around;
 }
 
 .project-item-div{
     display: flex;
     position: relative;
-    
+    width: 400px;
+    height: 300px;
+    margin: 50px;
 }
 
 .project-item-img{

@@ -6,7 +6,7 @@ export function Projects() {
     return (
         <section id="projects" className="project-section">
             <div className="container">
-                <div className="">
+                <div className="projects-title">
                 {/* <CodeIcon className="mx-auto inline-block w-10 mb-4" /> */}
                 <h1 className="">Apps I&apos;ve Built</h1>
                 <p className="">
