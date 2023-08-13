@@ -1,6 +1,6 @@
 #projects{
     overflow: hidden;
-    
+    max-width: 75rem;
     height: 100vh;
     border: 1px solid red;
 }
@@ -13,7 +13,9 @@
 }
 
 .project-items{
-    display: grid;
+    display: flex;
+    flex-wrap: wrap;
+    width: 600px;
     flex-wrap: wrap;
     margin: 4rem;
 }
@@ -21,6 +23,7 @@
 .project-item-div{
     display: flex;
     position: relative;
+    
 }
 
 .project-item-img{
