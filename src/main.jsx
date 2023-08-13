@@ -10,7 +10,6 @@ ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <Header />
     <Home />
-    {/* <App /> */}
     <Projects />
       {/* <About />
       <Skills />
