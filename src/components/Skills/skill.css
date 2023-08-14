@@ -1,0 +1,37 @@
+#skill{
+    overflow: hidden;
+    max-width: 75rem
+}
+
+.container{
+    padding: 5px 10px;
+    margin: 0 auto;
+}
+
+.skill-text{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.skills-items{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2px 0 ;
+
+    display: flex;
+    flex-wrap: wrap;
+    height: 100vh;
+    margin: 4rem;
+    flex-direction: row;
+    align-content: space-around;
+    justify-content: space-around;
+}
+
+.skill-item{
+    display: flex;
+    padding: 2px;
+    width: 100%;
+}
+/* sm:text-4xl text-3xl font-medium title-font text-white mb-4 */
+
+
