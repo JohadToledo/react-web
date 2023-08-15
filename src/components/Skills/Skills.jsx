@@ -4,7 +4,7 @@ import './skill.css'
 export function Skills(){
     return(
         <section id="skill">
-            <div className="container">
+            <div className="skill-container">
                 <div className="skill-text">
                     <h1>
                         Skill &amp; Technologies
@@ -12,6 +12,7 @@ export function Skills(){
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, veniam. Sint qui quaerat ratione nesciunt? Architecto vel est molestias molestiae. Quam, quae amet. Laboriosam, voluptatum illo. Voluptate ipsa numquam consequuntur?</p>
 
                 </div>
+                <div className="wrap">
                 <div className="skills-items">
                     {skills.map((skills) => (
                 <div key={skills} className="skill-item">
@@ -23,7 +24,7 @@ export function Skills(){
                 </div>
                         
                     ))}
-
+                    </div>
                 </div>
             </div>
         </section>
