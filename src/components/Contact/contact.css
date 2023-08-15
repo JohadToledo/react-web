@@ -1,0 +1,31 @@
+#contact{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-header{
+    margin: 30px;
+}
+
+.form{
+    width: 35rem;
+}
+
+form, input{
+    width: 100%;
+    margin: 30px;
+    height: 3rem;
+    font-size:x-large;
+
+}
+
+form, textarea{
+    width: 100%;
+    margin: 30px;
+    height: 9rem;
+    font-size:x-large;
+    
+}
