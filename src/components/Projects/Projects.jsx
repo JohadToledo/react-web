@@ -28,9 +28,6 @@ export function Projects() {
                 src={project.image}
                 />
                 <div className="project-item-desc">
-                <h2 className="tracking-widest text-sm title-font font-medium text-green-400 mb-1">
-                    {project.subtitle}
-                </h2>
                 <h1 className="title-font text-lg font-medium text-white mb-3">
                     {project.title}
                 </h1>

@@ -1,19 +1,19 @@
 export const projects = [
     {
-      title: "React Reserve",
+      title: "Petra",
       subtitle: "MERN Stack",
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-      image: "src/assets/_DSC1182.jpg",
-      link: "https://reactbootcamp.com",
+        " E-Commerce built in React.js that brings information from a Rest API and is divided into components, each component handles the information using React Hooks and Redux is used to share information between.",
+      image: "src/assets/Petra.png",
+      link: "https://codealo-commerce.vercel.app/",
     },
     {
-      title: "React Tracks",
+      title: "To Buy List",
       subtitle: "React and Python",
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-      image: "src/assets/IDJI0511.JPG",
-      link: "https://reedbarger.com",
+        "This app is built with Vanilla JavaScript, HTML and Vanilla CSS. It's like a To-Do list app that permits making a list of different.",
+      image: "src/assets/Tobuylist.png",
+      link: "https://tobuylist.web.app/",
     },
     {
       title: "DevChat",
