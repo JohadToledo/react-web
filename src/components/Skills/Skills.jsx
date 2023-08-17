@@ -1,8 +1,10 @@
 import { skills } from '../data'
+import { Element } from 'react-scroll'
 import './skill.css'
 
 export function Skills(){
     return(
+        <Element id='skills' name='skills'>
         <section id="skill">
             <div className="skill-container">
                 <div className="skill-text">
@@ -28,5 +30,6 @@ export function Skills(){
                 </div>
             </div>
         </section>
+        </Element>
     )
 }  

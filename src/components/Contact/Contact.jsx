@@ -1,9 +1,9 @@
 import "./contact.css";
 
 export function Contact() {
-  return (
+    return (
     <section id="contact">
-         <div className="contact-header">
+        <div className="contact-header">
         <h1>
             <strong>Get in Touch</strong>
         </h1>

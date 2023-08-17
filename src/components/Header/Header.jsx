@@ -1,21 +1,21 @@
-import './header.css'
-import { Link } from 'react-scroll'
-
+import "./header.css";
+import { Link } from "react-scroll";
+import { ScrollLink } from "react-scroll";
 
 function Header() {
   return (
-    <section id='header'>
+    <section id="header">
       <div className="header-content">
         <div> Johad Toledo </div>
-        <div className="navBar">
+        <div className="nav-bar">
           <nav>
-            <Link>Skills</Link>
-            <Link>Projects</Link>
-            <Link>About</Link>
-            <Link>Contacts</Link>
+            <Link to="skills">Skills</Link>
+            <Link to='projects'>Projects</Link>
+            <Link >About</Link>
+            <Link to='contact'>Contacts</Link>
           </nav>
         </div>
-    </div>
+      </div>
     </section>
   );
 }
