@@ -45,6 +45,12 @@ export function Contact() {
             />
             </label>
         </div>
+        <div className="send-btn">
+        <input 
+        type="submit" 
+        value="Send"
+        />
+        </div>
         </form>
         </div>
     </section>
