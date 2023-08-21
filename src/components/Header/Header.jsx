@@ -1,6 +1,5 @@
 import "./header.css";
 import { Link } from "react-scroll";
-import { ScrollLink } from "react-scroll";
 
 function Header() {
   return (
@@ -10,9 +9,8 @@ function Header() {
         <div className="nav-bar">
           <nav>
             <Link to="skills">Skills</Link>
-            <Link to='projects'>Projects</Link>
-            <Link >About</Link>
-            <Link to='contact'>Contacts</Link>
+            <Link to="projects">Projects</Link>
+            <Link to="contact">Contacts</Link>
           </nav>
         </div>
       </div>
