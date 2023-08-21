@@ -1,5 +1,5 @@
 #header {
-    color: white;
+    /* color: white; */
     padding: 20px;
     position: fixed;
     width: 100%;
@@ -32,3 +32,10 @@ nav{
 .name {
     font-size: 24px;
 }
+
+/* @media only screen and (min-width: 390px){
+    .header-content{
+        display: block;
+        align-items: center;
+    }
+} */
