@@ -14,17 +14,17 @@ export const projects = [
       link: "https://tobuylist.web.app/",
     },
     {
-      title: "DevChat",
+      title: "Google Clone",
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-      image: "src/assets/IMG_6703.JPG",
-      link: "https://jsbootcamp.com",
+        "Google clone with html and css",
+      image: "src/assets/troogle.png",
+      link: "https://troogle.web.app/",
     },
     {
       title: "Epic Todo App",
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-      image: "src/assets/Elena.jpg",
+      image: "src/assets/troogle.png",
       link: "https://pythonbootcamp.com",
     },
   ];
