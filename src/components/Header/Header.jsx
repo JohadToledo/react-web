@@ -1,9 +1,8 @@
-import "./header.css";
 import { Link } from "react-scroll";
 
 function Header() {
   return (
-    <section id="header" className="p-5 fixed w-screen max-w-7xl z-10 mx-auto bg-transparent">
+    <section id="header" className="p-5 fixed w-screen max-w-7xl z-10 mx-auto bg-transparent text-2xl">
       <div className="flex justify-between ">
         <div> Johad Toledo </div>
         <div className="">
