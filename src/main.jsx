@@ -1,11 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
-import Header from "./components/Header/Header";
-import { Home } from "./components/Home/Home";
-import { Projects } from "./components/Projects/Projects";
-import { Skills } from "./components/Skills/Skills";
-import { Contact } from "./components/Contact/Contact";
+import { Header } from "./components/Header";
+import { Home } from "./components/Home";
+import { Projects } from "./components/Projects";
+import { Skills } from "./components/Skills";
+import { Contact } from "./components/Contact";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
@@ -14,8 +14,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     <Projects />
     <Skills />
     <Contact />
-      {/* <About />
-      <Testimonials />
-      <Contact />  */}
+    {/* <About />
+      <Testimonials />  */}
   </React.StrictMode>
 );

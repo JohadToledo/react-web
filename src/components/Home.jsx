@@ -1,6 +1,6 @@
 import { Link } from 'react-scroll'
-import reactsvg from '../../assets/react.svg'
-import downloadImg from '../../assets/download.png'
+import reactsvg from 'C:/Develop/react-personal-web/react-web/src/assets/react.svg'
+import downloadImg from 'C:/Develop/react-personal-web/react-web/src/assets/download.png'
 
 export function Home(){
     return(
