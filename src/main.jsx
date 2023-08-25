@@ -11,11 +11,11 @@ import { Contact } from "./components/Contact";
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <Header />
-     
     <Home />
     <Projects />
     <Skills />
     <Contact />
-      {/*<About /><Testimonials />  */}
+      {/*<About />
+      <Testimonials />  */}
   </React.StrictMode>
 );

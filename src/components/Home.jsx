@@ -4,12 +4,12 @@ import downloadImg from 'C:/Develop/react-personal-web/react-web/src/assets/down
 
 export function Home(){
     const downloadFileAtURL = () => {
-        const pdfUrl = 'src/assets/JohadToledo-CV.pdf'; // Replace with the actual URL of your PDF file
+        const pdfUrl = 'src/assets/JohadToledo-CV.pdf';
         const link = document.createElement('a');
         link.href = pdfUrl;
-        link.download = 'JohadToledo-CV.pdf'; // You can customize the downloaded file name
-        link.target = '_blank'; // Open in a new tab if needed
-        link.rel = 'noopener noreferrer';
+        link.download = 'JohadToledo-CV.pdf'; 
+        link.target = '_blank'; 
+        link.rel = 'resume';
         link.click();
         }
 
@@ -23,7 +23,6 @@ export function Home(){
                     <button id="downloadCV" 
                     onClick={downloadFileAtURL} 
                     value="download" 
-                    // className="bg-white  flex items-center rounded-3xl my-4 px-8 "
                     className='my-4 border-3 rounded w-40 bg-teal-500 py-2 text-white text-lg flex justify-center items-center  hover:bg-teal-600'>
                         <img className='p-0 w-8 bg-transparent'src={downloadImg} alt="download" />
                         <span className="bg-transparent text-xl pl-2">Resume</span></button>
