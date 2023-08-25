@@ -15,6 +15,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     <Projects />
     <Skills />
     <Contact />
+    
       {/*<About />
       <Testimonials />  */}
   </React.StrictMode>
