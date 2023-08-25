@@ -1,4 +1,4 @@
-import { skills } from "./Data";
+import { skills } from "./data";
 import { Element } from "react-scroll";
 
 export function Skills() {
@@ -18,12 +18,12 @@ export function Skills() {
               Voluptate ipsa numquam consequuntur?
             </p>
           </div>
-          <div className="w-full mx-auto my-10 p-12">
-            <div className="w-full p-5 gap-2.5 flex flex-wrap my-0.5 mx-0 justify-around ">
+          
+            <div className="gap-2.5 flex flex-wrap justify-center lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2">
               {skills.map((skills) => (
                 <div
                   key={skills}
-                  className="border-solid border-amber-900 border-5 p-2.5 shadow-[0_2px_4px_rgba(0,0,0,0.1)]"
+                  className="border-solid border-teal-500 border-2 p-2.5"
                 >
                   <div className="text-white flex justify-center w-[20vw]">
                     <span>{skills}</span>
@@ -31,7 +31,7 @@ export function Skills() {
                 </div>
               ))}
             </div>
-          </div>
+          
         </div>
       </section>
     </Element>
