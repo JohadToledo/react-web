@@ -1,5 +1,7 @@
 import { skills } from "./Data";
 import { Element } from "react-scroll";
+import Check from 'C:/Develop/react-personal-web/react-web/src/assets/checklist.png'
+
 
 export function Skills() {
   return (
@@ -23,9 +25,10 @@ export function Skills() {
               {skills.map((skills) => (
                 <div
                   key={skills}
-                  className="border-solid border-teal-500 border-2 p-2.5"
+                  className="border-solid border-teal-900 border-2 p-2.5"
                 >
-                  <div className="text-white flex justify-center w-[20vw]">
+                  <div className="text-white flex w-[20vw]">
+                  <img className='mr-3 w-6 bg-transparent'src={Check} alt="checklist" />
                     <span>{skills}</span>
                   </div>
                 </div>
