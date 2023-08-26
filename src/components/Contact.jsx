@@ -1,22 +1,24 @@
-import { useState } from "react";
+import { useRef } from "react";
+import emailjs from 'emailjs-com';
+
+
 
 export function Contact() {
-        const [name, setName] = useState('')
-        const [email, setEmail] = useState('')
-        const [message, setMessage] = useState('')
+        const form = useRef()
 
-        const handleSubmit = e =>{
+        const sendEmail = (e) => {
             e.preventDefault();
+        
+            emailjs.sendForm('service_bf3rqvk', 'template_9eeag5n', form.current, 'IrswQ6NsCEaR6UaUN')
+            .then((result) => {
+                console.log(result.text);
+                form.current.reset()
+            }, (error) => {
+                console.log(error.text);
+            });
+        };
 
-            console.log('Name:', name)
-            console.log('Email:', email)
-            console.log('Message:', message)
-            //reset values
-            setName('')
-            setEmail('')
-            setMessage('')
-        }
-    
+        
     return (
     <section id="contact" className="h-screen w-full flex flex-col items-center">
         <div className="my-9">
@@ -25,7 +27,7 @@ export function Contact() {
         </h1>
         </div>
         <div className="form w-4/6 flex flex-col">
-        <form onSubmit={handleSubmit} action="" name="contact" className="g:w-1/3 flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0">
+        <form onSubmit={ sendEmail } ref={form} id='contact-form' action="" name="contact" className="g:w-1/3 flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0">
             <p className="leading-relaxed mb-5">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum
             suscipit officia aspernatur veritatis. Asperiores, aliquid?
@@ -33,14 +35,12 @@ export function Contact() {
             <div className="relative mb-4">
             <label id="name-label" htmlFor="name" className="leading-7 text-sm text-gray-400">
             <input
-            name="name"
+            name="from_name"
             className="w-full my-7 bg-white h-12 text-[x-large]"
             placeholder="Name"
             required
             type="text"
             id="name"
-            value={name}
-            onChange={(e) => setName(e.target.value)}
             />
             </label>
             </div>
@@ -48,14 +48,12 @@ export function Contact() {
             <label id="email-label" htmlFor="email" className="leading-7 text-sm text-gray-400">
             {" "}
             <input 
-            name="email"
+            name="user_email"
             className="w-full bg-white my-7 h-12 text-[x-large]"
             placeholder="Email"
             required
             type="email"
             id="email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
 
             />
             </label>
@@ -71,8 +69,6 @@ export function Contact() {
             required
             type="text"
             id="Message"
-            value={message}
-            onChange={(e) => setMessage(e.target.value)}
 
             />
             </label>
