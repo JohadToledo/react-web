@@ -22,10 +22,10 @@ export function Projects() {
               <div className=" flex relative w-96 h-72 m-12">
                 <img
                   alt="gallery"
-                  className="project-item-img absolute w-full h-full object-cover object-center inset-0"
+                  className="project-item-img absolute w-full h-full object-cover object-center inset-0 rounded"
                   src={project.image}
                 />
-                <div className="px-2 py-2.5 relative z-10 w-full border-4 border-gray-800 bg-gray-900 opacity-0 hover:opacity-100">
+                <div className="px-2 py-2.5 relative z-10 w-full border-4 border-gray-800 opacity-0 hover:opacity-100 rounded">
                   <h1 className="title-font text-lg font-medium text-white mb-3">
                     {project.title}
                   </h1>
