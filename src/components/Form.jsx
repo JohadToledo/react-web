@@ -1,9 +1,8 @@
 export function Form() {
   return (
     <>
-        <p className="leading-relaxed mb-5">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum
-            suscipit officia aspernatur veritatis. Asperiores, aliquid?
+        <p className="leading-relaxed mb-5 text-xl text-center">
+            I&#39;m excited to hear from you and explore how I can contribute to your project.<br/>Feel free to reach out using the form below, and let&#39;s discuss how we can collaborate on something amazing.
             </p>
             <div className="relative mb-4">
             <label id="name-label" htmlFor="name" className="leading-7 text-sm text-gray-400">

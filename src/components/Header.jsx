@@ -10,8 +10,8 @@ export function Header() {
         <div className="bg-transparent"> Johad Toledo </div>
         <div className="bg-transparent">
           <nav className="gap-5 flex bg-transparent">
-            <Link className='bg-transparent text-teal-500' to="skills">Skills</Link>
             <Link className='bg-transparent text-teal-500' to="projects">Projects</Link>
+            <Link className='bg-transparent text-teal-500' to="skills">Skills</Link>
             <Link className='bg-transparent text-teal-500' to="contact">Contacts</Link>
           </nav>
         </div>

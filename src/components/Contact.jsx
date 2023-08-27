@@ -21,7 +21,7 @@ export function Contact() {
 
         
     return (
-    <section id="contact" className="h-screen w-full flex flex-col items-center">
+    <section id="contact" className="h-screen w-screen max-w-7xl flex flex-col items-center">
         <div className="my-9">
         <h1>
             <strong>Get in Touch</strong>

@@ -5,15 +5,13 @@ export function Projects() {
   return (
     <section
       id="projects"
-      className="project-section overflow-hidden max-w-[75rem] h-[150vh] text-center mx-auto my-0"
+      className="project-section overflow-hidden w-screen max-w-7xl h-[150vh] text-center"
     >
-      <div className="container flex flex-col justify-center items-center h-full">
-        <div className="my-9">
-          {/* <CodeIcon className="mx-auto inline-block w-10 mb-4" /> */}
-          <h1 className="">Apps I&apos;ve Built</h1>
-          <p className="">
-            Here you can find out some projects that I&apos;ve been builting
-            out.
+      <div className="container flex flex-col justify-center items-center">
+        <div className="">
+          <h1 className="my-9">Projects</h1>
+          <p className="text-xl">
+          Welcome to my project gallery, where you can explore a collection of endeavors that showcase <br/>my dedication to <strong>crafting</strong> exceptional digital experiences.
           </p>
         </div>
         <div className=" flex flex-wrap justify-around m-16">

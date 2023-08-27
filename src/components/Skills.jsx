@@ -1,27 +1,23 @@
 import { skills } from "./Data";
-import { Element } from "react-scroll";
+// import { Element } from "react-scroll";
 import Check from 'C:/Develop/react-personal-web/react-web/src/assets/checklist.png'
 
 
 export function Skills() {
   return (
-    <Element id="skills" name="skills">
       <section
-        id="skill"
-        className="overflow-hidden max-w-[75rem] min-h-[80vh]"
+        id="skills"
+        className="overflow-hidden w-screen max-w-7xl min-h-[80vh]"
       >
         <div className="">
-          <div className="text-center my-24">
-            <h1>Skill &amp; Technologies</h1>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim,
-              veniam. Sint qui quaerat ratione nesciunt? Architecto vel est
-              molestias molestiae. Quam, quae amet. Laboriosam, voluptatum illo.
-              Voluptate ipsa numquam consequuntur?
+          <div className="text-center">
+            <h1 className="my-9">Skill &amp; Technologies</h1>
+            <p className="text-xl py-9 my-9 w-2/3 m-auto">
+            These are some of the technologies I&#39;ve been exploring on my journey to mastery, with an ever-present hunger to learn and grow:
             </p>
           </div>
           
-            <div className="gap-2.5 flex flex-wrap justify-center lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2">
+            <div className="py-4 gap-2.5 flex flex-wrap justify-center lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2">
               {skills.map((skills) => (
                 <div
                   key={skills}
@@ -37,6 +33,5 @@ export function Skills() {
           
         </div>
       </section>
-    </Element>
   );
 }
