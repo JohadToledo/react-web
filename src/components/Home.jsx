@@ -1,6 +1,7 @@
 import { Link } from 'react-scroll'
 import reactsvg from 'C:/Develop/react-personal-web/react-web/src/assets/react.svg'
 import downloadImg from 'C:/Develop/react-personal-web/react-web/src/assets/download.png'
+import Social from './Social';
 
 export function Home(){
     const downloadFileAtURL = () => {
@@ -17,9 +18,10 @@ export function Home(){
         <section id="home" className="w-screen max-w-7xl h-[calc(100vh-20px)] overflow-hidden flex flex-row-reverse items-end"> 
             <div className="h-screen w-screen p-8 leading-10 font-bold flex flex-col justify-center">
                 <span className="text-3xl font-thin">Hi,</span>
-                <span className="text-3xl font-thin">I am <span className="text-teal-600">Johad</span> <br />Web Developer</span>
+                <span className="text-3xl font-thin py-2">My name is <span className="text-teal-600 relative inline-block after:content-[''] after:absolute after:bottom-0 after:rounded after:left-0 after:w-full after:h-1.5 after:bg-teal-900">Johad</span> <br /> Web Developer</span>
                 <p className="text-3xl font-thin">A Web developer building reactive webapps.</p>
-                <Link to=''>
+                <Social />
+                <Link >
                     <button id="downloadCV" 
                     onClick={downloadFileAtURL} 
                     value="download" 
