@@ -31,8 +31,8 @@ export function Home(){
                         <span className="bg-transparent text-xl pl-2">Resume</span></button>
                 </Link>
                 </div>
-            <div className="h-full w-1/2 flex justify-center">
-            <img src={reactsvg} className="absolute pr-12 h-96 bottom-64" alt="foto" />
+            <div className="h-96 w-1/2 flex justify-center">
+            <img src={reactsvg} className="absolute pr-12 h-96" alt="foto" />
             </div>
             </div>
         </section>
