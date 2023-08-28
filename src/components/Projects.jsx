@@ -19,7 +19,7 @@ export function Projects() {
             <a href={project.link} key={project.image} className="project-item">
               <div className=" flex relative w-96 h-72 m-12">
                 <img
-                  alt="gallery"
+                  alt={project.title}
                   className="project-item-img absolute w-full h-full object-cover object-center inset-0 rounded"
                   src={project.image}
                 />
