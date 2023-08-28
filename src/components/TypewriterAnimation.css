@@ -1,7 +1,7 @@
-/* TypewriterAnimation.css */
+/* TypewriterAnimation.css*/
 .typewriter {
-    overflow: hidden;
-    white-space: nowrap;
+  white-space: nowrap;
+  overflow: hidden;
     animation: typing 6s steps(40, end), blink-caret 0.75s step-end infinite;
   }
   
