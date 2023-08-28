@@ -1,6 +1,6 @@
 import { skills } from "./Data";
 // import { Element } from "react-scroll";
-import Check from '../assets/checklist.png'
+import Check from '../../public/assets/checklist.png'
 
 
 export function Skills() {

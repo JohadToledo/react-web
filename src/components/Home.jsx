@@ -1,11 +1,11 @@
 import { Link } from 'react-scroll'
-import reactsvg from '../assets/react.svg'
-import downloadImg from '../assets/download.png'
+import reactsvg from '../../public/assets/react.svg'
+import downloadImg from '../../public/assets/download.png'
 import Social from './Social';
 
 export function Home(){
     const downloadFileAtURL = () => {
-        const pdfUrl = 'src/assets/JohadToledo-CV.pdf';
+        const pdfUrl = 'public/assets/JohadToledo-CV.pdf';
         const link = document.createElement('a');
         link.href = pdfUrl;
         link.download = 'JohadToledo-CV.pdf'; 
@@ -17,7 +17,7 @@ export function Home(){
     return(
         <section id="home" className="w-screen max-w-7xl h-[calc(100vh-20px)] overflow-hidden flex flex-row-reverse items-end"> 
             <div className="px-5 h-screen w-screen flex flex-row justify-center items-center content-center">
-                <div className="h-full w-1/2 leading-10 font-bold flex flex-col justify-center">
+                <div className="pl-12 h-full w-1/2 leading-10 font-bold flex flex-col justify-center">
                 <span className="text-3xl font-thin">Hi,</span>
                 <span className="text-3xl font-thin py-2">My name is <span className="text-teal-600 relative inline-block after:content-[''] after:absolute after:bottom-0 after:rounded after:left-0 after:w-full after:h-1.5 after:bg-teal-900">Johad</span> <br /> Web Developer</span>
                 <p className="text-3xl font-thin">A Web developer building reactive webapps.</p>
