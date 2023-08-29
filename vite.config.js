@@ -7,7 +7,7 @@ export default defineConfig({
   build: {
     rollupOptions: {
       external: [
-        '@/assets/petra.png','@/assets/tobuylist.png','@/assets/troogle.png','@/assets/checklist.png' // Add other assets if needed
+        '@/assets/petra.png','@/assets/tobuylist.png','@/assets/troogle.png','@/assets/checklist.png' 
       ],
     },
   },
