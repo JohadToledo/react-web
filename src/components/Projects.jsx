@@ -5,7 +5,7 @@ export function Projects() {
   return (
     <section
       id="projects"
-      className="project-section overflow-hidden w-screen max-w-7xl h-[150vh] text-center"
+      className=" overflow-hidden w-screen max-w-7xl h-[150vh] text-center"
     >
       <div className="container flex flex-col justify-center items-center">
         <div className="">
@@ -20,7 +20,7 @@ export function Projects() {
               <div className=" flex relative w-96 h-72 m-12">
                 <img
                   alt={project.title}
-                  className="project-item-img absolute w-full h-full object-cover object-center inset-0 rounded"
+                  className=" absolute w-full h-full object-cover object-center inset-0 rounded"
                   src={project.image}
                 />
                 <div className="px-2 py-2.5 relative z-10 w-full border-4 border-gray-800 opacity-0 hover:opacity-100 rounded">

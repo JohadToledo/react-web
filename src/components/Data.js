@@ -3,14 +3,14 @@ export const projects = [
       title: "Petra",
       description:
         " E-Commerce built in React.js that brings information from a Rest API and is divided into components, each component handles the information using React Hooks and Redux is used to share information between.",
-      image: 'assets/petra.png',
+      image: 'assets/Petra.png',
       link: "https://codealo-commerce.vercel.app/",
     },
     {
       title: "To Buy List",
       description:
         "This app is built with Vanilla JavaScript, HTML and Vanilla CSS. It's like a To-Do list app that permits making a list of different.",
-      image: 'assets/tobuylist.png',
+      image: 'assets/Tobuylist.png',
       link: "https://tobuylist.web.app/",
     },
     {
