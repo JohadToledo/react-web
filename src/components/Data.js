@@ -1,6 +1,7 @@
-import petra from '@/assets/petra.png'
-import tobuylist from '@/assets/tobuylist.png'
-import troogle from '@/assets/troogle.png'
+import petra from './../../dist/assets/petra.png'
+import tobuylist from '../../dist/assets/tobuylist.png'
+import pet from "../../dist/assets/checklist.png"
+import troogle from '../../dist/assets/troogle.png'
 
 export const projects = [
     {
@@ -28,7 +29,7 @@ export const projects = [
       title: "Epic Todo App",
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-      image: troogle,
+      image: pet,
       link: "https://pythonbootcamp.com",
     },
   ];
