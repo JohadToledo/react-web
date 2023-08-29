@@ -1,7 +1,7 @@
-import petra from './assets/petra.png?url'
-import tobuylist from './assets/tobuylist.png?url'
-import pet from "./assets/checklist.png?url"
-import troogle from './assets/troogle.png?url'
+import petra from './assets/petra.png'
+import tobuylist from './assets/tobuylist.png'
+import pet from "./assets/checklist.png"
+import troogle from './assets/troogle.png'
 
 export const projects = [
     {
