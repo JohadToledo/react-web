@@ -1,6 +1,6 @@
-import petra from '../assets/petra.png'
-import tobuylist from '../assets/tobuylist.png'
-import troogle from '../assets/troogle.png'
+import petra from '@/assets/petra.png'
+import tobuylist from '@/assets/tobuylist.png'
+import troogle from '@/assets/troogle.png'
 
 export const projects = [
     {
