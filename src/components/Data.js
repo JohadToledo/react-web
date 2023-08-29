@@ -1,35 +1,30 @@
-import petra from '../../public/assets/petra.png'
-import tobuylist from '../../public/assets/tobuylist.png'
-import pet from "../../public/assets/checklist.png"
-import troogle from '../../public/assets/troogle.png'
-
 export const projects = [
     {
       title: "Petra",
       description:
         " E-Commerce built in React.js that brings information from a Rest API and is divided into components, each component handles the information using React Hooks and Redux is used to share information between.",
-      image: petra,
+      image: '/assets/petra.png',
       link: "https://codealo-commerce.vercel.app/",
     },
     {
       title: "To Buy List",
       description:
         "This app is built with Vanilla JavaScript, HTML and Vanilla CSS. It's like a To-Do list app that permits making a list of different.",
-      image: tobuylist,
+      image: '/assets/tobuylist.png',
       link: "https://tobuylist.web.app/",
     },
     {
       title: "Google Clone",
       description:
         "Google clone with html and css",
-      image: troogle,
+      image: '/assets/troogle.png',
       link: "https://troogle.web.app/",
     },
     {
       title: "Epic Todo App",
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-      image: pet,
+      image: '/assets/troogle.png',
       link: "https://pythonbootcamp.com",
     },
   ];
