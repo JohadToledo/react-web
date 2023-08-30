@@ -15,9 +15,9 @@ export function Home(){
         }
 
     return(
-        <section id="home" className="w-screen max-w-7xl h-[calc(100vh-20px)] overflow-hidden flex flex-row-reverse items-end"> 
-            <div className="px-5 h-screen w-screen flex flex-row justify-center items-center content-center">
-                <div className="pl-12 h-full w-1/2 leading-10 font-bold flex flex-col justify-center">
+        <section id="home" className="w-screen md:max-w-7xl h-[calc(100vh-20px)] overflow-hidden flex flex-row-reverse  items-end"> 
+            <div className="px-5 h-screen w-screen flex flex-col md:flex-row justify-center items-center content-center ">
+                <div className="lg:pl-12 h-full sm:pl-0 md:pl-0 w-1/2 leading-10 font-bold flex flex-col justify-center">
                 <span className="text-3xl font-thin">Hi,</span>
                 <span className="text-3xl font-thin py-2">My name is <span className="text-teal-600 relative inline-block after:content-[''] after:absolute after:bottom-0 after:rounded after:left-0 after:w-full after:h-1.5 after:bg-teal-900">Johad</span> <br /> Web Developer</span>
                 <p className="text-3xl font-thin">A Web developer building reactive webapps.</p>
@@ -31,8 +31,8 @@ export function Home(){
                         <span className="bg-transparent text-xl pl-2">Resume</span></button>
                 </Link>
                 </div>
-            <div className="h-96 w-1/2 flex justify-center">
-            <img src={reactsvg} className="absolute pr-12 h-96" alt="foto" />
+            <div className="h-36 md:h-96 w-1/2 flex justify-center">
+            <img src={reactsvg} className="h-36 absolute pr-12 md:h-96" alt="foto" />
             </div>
             </div>
         </section>
