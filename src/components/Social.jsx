@@ -3,7 +3,7 @@ import { social } from "./Data";
 export default function Social() {
   return (
     <>
-        <div className='flex w-1/3 gap-x-4 my-3 hover:fill-teal-500'>
+        <div className='flex justify-center w-40 gap-x-4 my-4 hover:fill-teal-500'>
       {social &&
         social.map(({ name, url, icon }) => (
           
