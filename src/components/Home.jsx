@@ -2,6 +2,7 @@ import { Link } from 'react-scroll'
 import reactsvg from '../../public/assets/react.svg'
 import downloadImg from '../../public/assets/download.png'
 import Social from './Social';
+import Typewriter from './Typewriter';
 
 export function Home(){
     const downloadFileAtURL = () => {
@@ -20,7 +21,8 @@ export function Home(){
                 <div className="lg:pl-12 h-full sm:pl-0 md:pl-0 text-2xl md:text-3xl w-2/3 leading-7 font-thin flex flex-col justify-center items-center md:items-start">
                 <span className="">Hi,</span>
                 <span className="py-2">I&#39;m <span className="font-bold text-teal-600 relative inline-block after:content-[''] after:absolute after:bottom-0 after:rounded after:left-0 after:w-full after:h-1.5 after:bg-teal-900">Johad</span></span>
-                <p className="text-center sm:text-left">A Web developer building reactive web apps.</p>
+                <Typewriter />
+                {/* <p className="text-center sm:text-left">A Web developer building reactive web apps.</p> */}
                 <Social />
                 <Link >
                     <button id="downloadCV" 
