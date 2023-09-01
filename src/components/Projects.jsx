@@ -5,7 +5,7 @@ export function Projects() {
   return (
     <section
       id="projects"
-      className=" overflow-hidden w-screen max-w-7xl h-auto text-center"
+      className="overflow-hidden w-screen max-w-7xl h-auto text-center"
     >
       <div className="container flex flex-col justify-center items-center">
         <div className="">
