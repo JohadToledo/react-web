@@ -5,12 +5,12 @@ export function Projects() {
   return (
     <section
       id="projects"
-      className="overflow-hidden w-screen max-w-7xl h-auto text-center"
+      className=" overflow-hidden w-screen max-w-7xl h-auto text-center"
     >
       <div className="container flex flex-col justify-center items-center">
         <div className="">
           <h1 className="my-9">Projects</h1>
-          <p className="text-xl px-10">
+          <p className="text-xl w-full px-5">
           Welcome to my project gallery, where you can explore a collection of endeavors that showcase <br/>my dedication to <strong>crafting</strong> exceptional digital experiences.
           </p>
         </div>
