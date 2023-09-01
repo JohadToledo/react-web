@@ -16,7 +16,7 @@ export function Projects() {
         </div>
         <div className=" flex flex-wrap justify-around m-16">
           {projects.map((project) => (
-            <a href={project.link} key={project.image} className="project-item">
+            <a href={project.link} key={project.image} className="">
               <div className=" flex relative w-96 h-72 m-12">
                 <img
                   alt={project.title}

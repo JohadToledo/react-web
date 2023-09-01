@@ -3,7 +3,7 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import { Header } from "./components/Header";
 import { Home } from "./components/Home";
-// import { Projects } from "./components/Projects";
+import { Projects } from "./components/Projects";
 import { Skills } from "./components/Skills";
 import { Contact } from "./components/Contact";
 import Footer from "./components/Footer";
@@ -14,7 +14,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     <Header />
     <Home />
     <Portfolio />
-    {/* <Projects /> */}
+    <Projects />
     <Skills />
     <Contact />
     <Footer />

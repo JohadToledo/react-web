@@ -13,25 +13,29 @@ export default function Portfolio() {
             experiences.
           </p>
         </div>
-        <div className="flex flex-col max-w-5xl">
+        <div className="flex flex-col max-w-5xl ">
           {projects.map((project) => (
-            <div key={project.id}>
-                <h1 className="title-font text-lg font-medium text-white mb-3">
+            <div key={project.id} className="flex flex-col py-10 bg-cyan-700 border rounded my-12">
+                <h1 className="title-font text-lg font-medium text-white mb-3 bg-transparent">
                     {project.title}
                 </h1>
-                <div className="flex flex-row">
-                <a href={project.link} key={project.image} className="w-1/2">
-                    <div className="flex relative py-5">
+                <div className="flex flex-row bg-transparent mx-10">
+                    <div className="relative">
+                    <a href={project.link} key={project.image} className="w-1/2 h-full opacity-70 hover:opacity-100">
                     <img
                     alt={project.title}
-                    className="w-full h-full rounded"
+                    className="w-full h-full rounded h-80"
                     src={project.image}
                     />
+                    </a>
                     </div>
-                </a>
-                <div className="px-2 py-2.5 w-1/2 ">
-                  <p className="leading-relaxed">{project.description}</p>
+                <div className="px-5 py-2.5 w-1/2 flex items-center justify-center text-xl bg-transparent">
+                  <p className="w-2/3 leading-relaxed bg-transparent">{project.description}</p>
                 </div>
+                
+                </div>
+                <div className="px-5 bg-transparent">
+                    <h3 className="px-5 pt-10 bg-transparent">{project.technologies}</h3>
                 </div>
             </div>
           ))}

@@ -5,6 +5,7 @@ export const projects = [
         " E-Commerce built in React.js that brings information from a Rest API and is divided into components, each component handles the information using React Hooks and Redux is used to share information between.",
       image: 'assets/Petra.png',
       link: "https://codealo-commerce.vercel.app/",
+      technologies : ['CSS', 'JavaScript', 'HTML' ]
     },
     {
       title: "To Buy List",
@@ -12,6 +13,7 @@ export const projects = [
         "This app is built with Vanilla JavaScript, HTML and Vanilla CSS. It's like a To-Do list app that permits making a list of different.",
       image: 'assets/Tobuylist.png',
       link: "https://tobuylist.web.app/",
+      technologies : ['CSS', 'JavaScript', 'HTML' ]
     },
     {
       title: "Google Clone",
@@ -19,6 +21,7 @@ export const projects = [
         "Google clone with html and css",
       image: 'assets/troogle.png',
       link: "https://troogle.web.app/",
+      technologies : ['CSS', 'JavaScript', 'HTML' ]
     },
     {
       title: "Epic Todo App",
@@ -26,6 +29,7 @@ export const projects = [
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
       image: 'assets/troogle.png',
       link: "https://pythonbootcamp.com",
+      technologies : ['CSS', 'JavaScript', 'HTML' ]
     },
   ];
 
