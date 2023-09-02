@@ -11,7 +11,7 @@ export function Skills() {
       >
         <div className="">
           <div className="text-center">
-            <h1 className="my-9">Skill &amp; Technologies</h1>
+            <h1 className="my-9 text-3xl">Skill &amp; Technologies</h1>
             <p className="text-xl py-9 my-9 w-2/3 m-auto">
             These are some of the technologies I&#39;ve been exploring on my journey to mastery, with an ever-present hunger to learn and grow:
             </p>

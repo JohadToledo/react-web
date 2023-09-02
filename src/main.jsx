@@ -7,13 +7,11 @@ import { Projects } from "./components/Projects";
 import { Skills } from "./components/Skills";
 import { Contact } from "./components/Contact";
 import Footer from "./components/Footer";
-import Portfolio from "./components/Portfolio";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <Header />
     <Home />
-    <Portfolio />
     <Projects />
     <Skills />
     <Contact />
