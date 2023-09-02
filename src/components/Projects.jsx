@@ -40,8 +40,10 @@ return (
                         <p className="w-2/3 leading-relaxed bg-transparent">{project.description}</p>
                     </div>
                 </div>
-                <div className="px-5 bg-transparent">
-                    <h3 className="px-5 pt-10 bg-transparent">{project.technologies}</h3>
+                <div className=" bg-transparent flex py-10">
+                {project.technologies.map((technology, index) => (
+                <h3 key={index} className="px-5  bg-transparent text-xl">{technology}</h3>
+                ))}
                 </div>
             </div>
             ))}
