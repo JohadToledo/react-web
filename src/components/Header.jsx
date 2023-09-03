@@ -1,4 +1,5 @@
 import { Link } from "react-scroll";
+import Menu from "./Menu";
 
 export function Header() {
   return (
@@ -13,6 +14,7 @@ export function Header() {
             <Link className='bg-transparent text-teal-500' to="projects">Projects</Link>
             <Link className='bg-transparent text-teal-500' to="skills">Skills</Link>
             <Link className='bg-transparent text-teal-500' to="contact">Contacts</Link>
+            <Menu className='sm:display-none'/>
           </nav>
         </div>
       </div>
