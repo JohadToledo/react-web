@@ -15,7 +15,7 @@ return (
         </div>
         <div className="flex flex-col max-[980px] py-10  ">
             {projects.map((project) => (
-            <div key={project.id} className="shadow-xl shadow-indigo-950 flex flex-col items-center bg-indigo-900 rounded-[1rem] m-12">
+            <div key={project.id} className="shadow-xl shadow-indigo-950 flex flex-col items-center bg-indigo-900 rounded-[1rem] m-5 sm:m-12">
                 <a href={project.link} 
                 rel="noreferrer" 
                 target="_blank" 
