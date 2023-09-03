@@ -3,7 +3,7 @@ import { TypeAnimation } from 'react-type-animation';
 export default function Typewriter() {
   return (
     <TypeAnimation 
-        className='inline-block text-3xl text-teal-600'
+        className='inline-block text-base sm:text-3xl text-teal-600'
       sequence={[
         // Same substring at the start will only be typed out once, initially
         'I am a pragmatic Frontend Developer',
@@ -14,7 +14,7 @@ export default function Typewriter() {
         1500,
         
       ]}
-      wrapper="h3"
+      wrapper="p"
       speed={50}
       repeat={Infinity}
     />
