@@ -20,13 +20,13 @@ export function Contact() {
 
         
     return (
-    <section id="contact" className="h-screen w-screen max-w-7xl min-h-full flex flex-col items-center">
+    <section id="contact" className="h-screen w-screen max-w-7xl flex flex-col items-center">
         <div className="my-9">
         <h1 className="text-3xl">
             Get in Touch
         </h1>
         </div>
-        <div className="form w-4/6 flex flex-col">
+        <div className="form w-4/6 flex flex-col mb-10">
         <form 
             onSubmit={ sendEmail } 
             ref={form} id='contact-form' 
