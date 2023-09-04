@@ -16,7 +16,8 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     <Skills />
     <Contact />
     <Footer />
-      {/*<About />
-      <Testimonials />  */}
   </React.StrictMode>
 );
+
+{/*<About />
+      <Testimonials />  */}

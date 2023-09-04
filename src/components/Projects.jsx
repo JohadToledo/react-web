@@ -22,8 +22,8 @@ return (
                 className="w-auto title-font text-3xl font-medium text-white mb-3 bg-transparent py-5 hover:text-teal-300">
                 {project.title}
                 </a>
-                <div className="flex flex-col sm:flex-row bg-transparent mx-5 sm:mx-10">
-                    <div className="sm:w-[55%] sm:h-96 rounded-[1rem]">
+                <div className="flex flex-col lg:flex-row bg-transparent mx-5 sm:mx-10">
+                    <div className="lg:w-[55%] sm:h-96 rounded-[1rem]">
                     <a href={project.link} 
                     key={project.image}
                     rel="noreferrer" 
@@ -36,8 +36,8 @@ return (
                         />
                     </a>
                     </div>
-                    <div className="py-5 sm:px-5 sm:py-2.5 sm:w-1/2 flex items-center justify-center sm:text-xl bg-transparent">
-                        <p className="sm:w-2/3 leading-relaxed bg-transparent">{project.description}</p>
+                    <div className="py-5 sm:px-5 sm:py-2.5 lg:w-1/2 flex items-center justify-center sm:text-xl bg-transparent">
+                        <p className="md:w-2/3 leading-relaxed bg-transparent">{project.description}</p>
                     </div>
                 </div>
                 <div className=" bg-transparent flex py-5 sm:py-10">

@@ -16,9 +16,7 @@ export function Header() {
             <Link className='bg-transparent text-teal-500' to="contact">Contacts</Link>
           </nav>
         </div>
-        <div>
         <Menu />
-        </div>
       </div>
     </section>
   );

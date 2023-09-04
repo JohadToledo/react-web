@@ -2,8 +2,6 @@ import { useRef } from "react";
 import emailjs from 'emailjs-com';
 import { Form } from "./Form";
 
-
-
 export function Contact() {
         const form = useRef()
 
@@ -21,7 +19,7 @@ export function Contact() {
 
         
     return (
-    <section id="contact" className="h-screen w-screen max-w-7xl flex flex-col items-center">
+    <section id="contact" className="h-screen w-screen max-w-7xl min-h-full flex flex-col items-center">
         <div className="my-9">
         <h1 className="text-3xl">
             Get in Touch
