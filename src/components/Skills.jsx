@@ -21,7 +21,7 @@ export function Skills() {
               {skills.map((skills) => (
                 <div
                   key={skills}
-                  className="border-solid border-teal-900 border-2 p-3  mx-7 my-2"
+                  className="border-solid border-teal-900 border-2 p-3 sm:p-2 mx-7 my-2"
                 >
                   <div className="text-white flex w-[20vw]">
                   <img className='mr-3 sm:w-6 hidden sm:flex bg-transparent'src={Check} alt="checklist" />
