@@ -38,16 +38,10 @@ export default function Menu() {
       </button>
       {isOpen ? (
         <div  className="absolute top-12 right-20 mt-2 py-2 w-2/3 h-38 bg-transparent border border-gray-300 rounded-lg shadow-lg z-10">
-          <ul>
-            <li  className="px-4 py-2 hover:bg-gray-100">
-            <Link onClick={toggleDropdown} className='bg-transparent text-teal-500' to="projects">Projects</Link>
-            </li>
-            <li className="px-4 py-2 hover:bg-gray-100">
-            <Link onClick={toggleDropdown} className='bg-transparent text-teal-500' to="skills">Skills</Link>
-            </li>
-            <li className="px-4 py-2 hover:bg-gray-100">
-            <Link onClick={toggleDropdown} className='bg-transparent text-teal-500' to="contact">Contacts</Link>
-            </li>
+          <ul className="grid grid-col text-center py-5">
+            <Link onClick={toggleDropdown} className='bg-transparent text-teal-500 py-2' to="projects">Projects</Link>
+            <Link onClick={toggleDropdown} className='bg-transparent text-teal-500 py-2' to="skills">Skills</Link>
+            <Link onClick={toggleDropdown} className='bg-transparent text-teal-500 py-2' to="contact">Contacts</Link>
           </ul>
         </div>
       ) : null}
