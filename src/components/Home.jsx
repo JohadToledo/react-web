@@ -17,12 +17,11 @@ export function Home(){
 
     return(
         <section id="home" className="w-screen md:max-w-7xl h-screen sm:h-[calc(100vh-20px)] overflow-hidden flex flex-row-reverse"> 
-            <div className="md:px-5 h-2/3 sm:h-screen w-screen flex flex-col md:flex-row justify-center items-center ">
+            <div className="md:px-5 h-2/3 md:h-screen w-screen flex flex-col md:flex-row justify-center items-center ">
                 <div className="lg:pl-12 h-full sm:pl-0 md:pl-0 text-2xl md:text-3xl w-2/3 leading-7 font-thin flex flex-col justify-center items-center sm:items-start">
                 <span className="">Hi,</span>
                 <span className="py-2">I&#39;m <span className="font-bold text-teal-600 relative inline-block after:content-[''] after:absolute after:bottom-0 after:rounded after:left-0 after:w-full after:h-1.5 after:bg-teal-900">Johad</span></span>
                 <Typewriter />
-                {/* <p className="text-center sm:text-left">A Web developer building reactive web apps.</p> */}
                 <Social />
                 <Link >
                     <button id="downloadCV" 

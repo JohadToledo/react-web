@@ -17,13 +17,13 @@ export function Skills() {
             </p>
           </div>
           
-            <div className="py-4 w-full gap-1 flex flex-wrap justify-center lg:w-4/5 sm:gap-2.5 sm:mx-auto sm:mb-2 -mx-2">
+            <div className="py-4 gap-1 grid grid-cols-2 sm:w-2/3 sm:gap-2.5 sm:mx-auto sm:mb-2 -mx-2">
               {skills.map((skills) => (
                 <div
                   key={skills}
                   className="border-solid border-teal-900 border-2 p-3 sm:p-2 mx-7 my-2"
                 >
-                  <div className="text-white flex w-[20vw]">
+                  <div className="text-white flex">
                   <img className='mr-3 sm:w-6 hidden sm:flex bg-transparent'src={Check} alt="checklist" />
                     <span>{skills}</span>
                   </div>
