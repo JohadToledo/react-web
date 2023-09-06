@@ -35,8 +35,8 @@ export function Form() {
             name="message"
             rows={6}
             cols={30} 
-            className="w-full my-7 h-36 text-[x-large] bg-transparent border-2 rounded border-teal-900 hover:border-teal-600"
-            placeholder="  Message"
+            className="pl-3 pt-2 w-full my-7 h-36 text-[x-large] bg-transparent border-2 rounded border-teal-900 hover:border-teal-600"
+            placeholder="Message"
             required
             type="text"
             id="Message"
