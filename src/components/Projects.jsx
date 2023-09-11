@@ -5,8 +5,7 @@ export function Projects() {
     scroll(progress => console.log(progress))
 return (
     <motion.section 
-    animate={{y:-100, scale:1}}
-    initial={{scale:0}}
+    animate={{y:-50}}
     id="projects" 
     className="overflow-hidden w-screen max-w-7xl h-auto text-center text-indigo-200">   
         <div className="container flex flex-col justify-center items-center ">
