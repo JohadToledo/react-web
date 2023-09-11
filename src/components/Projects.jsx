@@ -1,11 +1,14 @@
 import { projects } from "./Data.js";
-
+import { motion } from "framer-motion";
 export function Projects() {
 
-    
+    scroll(progress => console.log(progress))
 return (
-    <section id="projects" className="overflow-hidden w-screen max-w-7xl h-auto text-center text-indigo-200">
-       
+    <motion.section 
+    animate={{y:-100, scale:1}}
+    initial={{scale:0}}
+    id="projects" 
+    className="overflow-hidden w-screen max-w-7xl h-auto text-center text-indigo-200">   
         <div className="container flex flex-col justify-center items-center ">
         <div className="">
             <h1 className="my-9 text-3xl">Projects</h1>
@@ -52,6 +55,6 @@ return (
             ))}
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 }
