@@ -3,20 +3,30 @@ import reactsvg from '../../public/assets/react.svg'
 import downloadImg from '../../public/assets/download.png'
 import Social from './Social';
 import Typewriter from './Typewriter';
+// import { motion } from 'framer-motion';
+
+
+
+
+
 
 export function Home(){
-    const downloadFileAtURL = () => {
-        const pdfUrl = 'public/assets/JohadToledo-CV.pdf';
-        const link = document.createElement('a');
-        link.href = pdfUrl;
-        link.download = 'JohadToledo-CV.pdf'; 
-        link.target = '_blank'; 
-        link.rel = 'resume';
-        link.click();
+      const downloadFileAtURL = () => {
+          const pdfUrl = 'public/assets/JohadToledo-CV.pdf';
+          const link = document.createElement('a');
+          link.href = pdfUrl;
+          link.download = 'JohadToledo-CV.pdf'; 
+          link.target = '_blank'; 
+          link.rel = 'resume';
+          link.click();
         }
-
-    return(
-        <section id="home" className="w-screen md:max-w-7xl h-screen sm:h-[calc(100vh-20px)] overflow-hidden flex flex-row-reverse"> 
+        
+        return(
+            // <motion.div 
+            // initial={{opacity: 0, y: 700}}
+            // animate={{opacity: 1, y: 0}}
+            // transition={{duration: 1, ease: "easeOut"}} >
+            <section id="home" className="w-screen md:max-w-7xl h-screen sm:h-[calc(100vh-20px)] overflow-hidden flex flex-row-reverse"> 
             <div className="md:px-5 h-2/3 md:h-screen w-screen flex flex-col md:flex-row justify-center items-center ">
                 <div className="lg:pl-12 h-full sm:pl-0 md:pl-0 text-2xl md:text-3xl w-2/3 leading-7 font-thin flex flex-col justify-center items-center sm:items-start">
                 <span className="">Hi,</span>
@@ -37,5 +47,6 @@ export function Home(){
             </div>
             </div>
         </section>
+            // </motion.div> 
     )
 }
