@@ -1,17 +1,51 @@
 import { projects } from "./Data.js";
-import { useRef, useEffect} from "react"
-import { motion, useInView } from "framer-motion";
-export function Projects() {
-    const ref = useRef(null);
-    const isInView = useInView(ref, {once: true});
+import { useRef, useEffect } from 'react';      
 
-    useEffect(() => {
-        console.log(isInView)
-    }, [isInView]
-    )
+function isInViewport(element){
+  const rect = element.getBoundingClientRect();
   return (
-    <motion.section
-      ref={ref}
+    rect.top >= 0 &&
+    rect.left >= 0 &&
+    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+    rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+  );
+}
+export function Projects() {
+
+
+const targetRef = useRef(null);
+
+  // Add a function to handle the animation when the element is in the viewport
+const handleAnimation = () => {
+  const targetElement = targetRef.current;
+  console.log(isInViewport, "hola")
+  if (isInViewport(targetElement)) {
+    targetElement.classList.add('fade-in');
+    console.log('ssssi')
+  }
+};
+
+  // Use the Intersection Observer to trigger the animation
+  useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          handleAnimation();
+          observer.unobserve(entry.target);
+        }
+      });
+    });
+
+    observer.observe(targetRef.current);
+
+    return () => {
+      observer.disconnect();
+    };
+  });
+
+
+  return (
+    <section
       id="projects"
       className="overflow-hidden w-screen max-w-7xl h-auto text-center text-indigo-200"
     >
@@ -25,7 +59,9 @@ export function Projects() {
             experiences.
           </p>
         </div>
-        <div className="flex flex-col max-[980px] py-10  ">
+        <div 
+        ref={targetRef}
+        className="flex flex-col max-[980px] py-10  ">
           {projects.map((project) => (
             <div
               key={project.id}
@@ -75,6 +111,6 @@ export function Projects() {
           ))}
         </div>
       </div>
-    </motion.section>
+    </section>
   );
 }
