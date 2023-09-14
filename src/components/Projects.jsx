@@ -1,29 +1,33 @@
 import { projects } from "./Data.js";
-import { useRef, useEffect } from 'react';      
+import { useRef, useEffect } from "react";
 
-function isInViewport(element){
+function isInViewport(element) {
   const rect = element.getBoundingClientRect();
   return (
     rect.top >= 0 &&
     rect.left >= 0 &&
-    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+    rect.bottom <=
+      (window.innerHeight || document.documentElement.clientHeight) &&
     rect.right <= (window.innerWidth || document.documentElement.clientWidth)
   );
 }
 export function Projects() {
-
-
-const targetRef = useRef(null);
+  const targetRef = useRef(null);
 
   // Add a function to handle the animation when the element is in the viewport
-const handleAnimation = () => {
-  const targetElement = targetRef.current;
-  console.log(isInViewport, "hola")
-  if (isInViewport(targetElement)) {
-    targetElement.classList.add('fade-in');
-    console.log('ssssi')
-  }
-};
+  const handleAnimation = () => {
+    const targetElement = targetRef.current;
+    console.log(isInViewport, "hola");
+    setTimeout(() => {
+      targetElement.classList.add("fade-in");
+    }, 300);
+    /*
+    if (isInViewport(targetElement)) {
+      targetElement.classList.add("fade-in");
+      console.log("ssssi");
+    }
+    */
+  };
 
   // Use the Intersection Observer to trigger the animation
   useEffect(() => {
@@ -43,7 +47,6 @@ const handleAnimation = () => {
     };
   });
 
-
   return (
     <section
       id="projects"
@@ -59,9 +62,10 @@ const handleAnimation = () => {
             experiences.
           </p>
         </div>
-        <div 
-        ref={targetRef}
-        className="flex flex-col max-[980px] py-10  ">
+        <div
+          ref={targetRef}
+          className="flex flex-col max-[980px] py-10 opacity-0"
+        >
           {projects.map((project) => (
             <div
               key={project.id}
