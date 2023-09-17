@@ -3,11 +3,10 @@ import { TypeAnimation } from 'react-type-animation';
 export default function Typewriter() {
   return (
     <TypeAnimation 
-        className='inline-block text-base sm:text-3xl text-teal-600'
+        className='inline-block text-base sm:text-3xl text-lorange'
       sequence={[
-        // Same substring at the start will only be typed out once, initially
         'I am a pragmatic Frontend Developer',
-        1500, // wait 1s before replacing "Mice" with "Hamsters"
+        1500, 
         'I build things for the web',
         1500,
         'I create aesthetic and modern apps',

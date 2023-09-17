@@ -33,11 +33,11 @@ export function Projects() {
   return (
     <section
       id="projects"
-      className="overflow-hidden w-screen max-w-7xl h-auto text-center text-indigo-200"
+      className="overflow-hidden w-screen max-w-7xl h-auto text-center text-yellow"
     >
       <div className="container flex flex-col justify-center items-center ">
         <div className="">
-          <h1 className="my-9 text-3xl">Projects</h1>
+          <h1 className="my-9 text-3xl text-orange">Projects</h1>
           <p className="text-xl px-10">
             Welcome to my project gallery, where you can explore a collection of
             endeavors that showcase <br />
@@ -52,15 +52,15 @@ export function Projects() {
           {projects.map((project) => (
             <div
               key={project.id}
-              className="shadow-xl shadow-indigo-950 flex flex-col items-center bg-indigo-900 rounded-[1rem] m-5 sm:m-12"
+              className="shadow-xl shadow-red flex flex-col items-center bg-lorange rounded-[1rem] m-5 sm:m-12"
             >
               <a
                 href={project.link}
                 rel="noreferrer"
                 target="_blank"
-                className="w-auto title-font text-3xl font-medium text-white mb-3 bg-transparent py-5 hover:text-teal-300"
+                className="w-auto title-font text-3xl font-medium text-yellow m-4 bg-transparent py-5 hover:text-orayellow"
               >
-                {project.title}
+                <span className="bg-transparent text-red">Featured Project - </span> {project.title}
               </a>
               <div className="flex flex-col lg:flex-row bg-transparent mx-5 sm:mx-10">
                 <div className="lg:w-[55%] sm:h-96 rounded-[1rem]">
@@ -88,7 +88,7 @@ export function Projects() {
                 {project.technologies.map((technology, index) => (
                   <h3
                     key={index}
-                    className="px-2 sm:px-5 bg-transparent text-xl"
+                    className="px-2 sm:px-5 bg-transparent text-xl text-red"
                   >
                     {technology}
                   </h3>

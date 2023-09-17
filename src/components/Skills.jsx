@@ -7,11 +7,11 @@ export function Skills() {
   return (
       <section
         id="skills"
-        className="overflow-hidden w-screen max-w-7xl h-auto"
+        className="overflow-hidden w-screen max-w-7xl h-auto text-yellow"
       >
         <div className="">
           <div className="text-center">
-            <h1 className="my-9 text-3xl">Skill &amp; Technologies</h1>
+            <h1 className="my-9 text-3xl text-orange">Skill &amp; Technologies</h1>
             <p className="text-xl py-9 my-9 w-2/3 m-auto">
             These are some of the technologies I&#39;ve been exploring on my journey to mastery, with an ever-present hunger to learn and grow:
             </p>

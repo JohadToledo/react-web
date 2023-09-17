@@ -32,17 +32,17 @@ export function Home(){
             transition={{ duration: 0.5, delay: 0.25 }}
             id="home" 
             className="w-screen md:max-w-7xl h-screen sm:h-[calc(100vh-20px)] overflow-hidden flex flex-row-reverse"> 
-            <div className="md:px-5 h-2/3 md:h-screen w-screen flex flex-col md:flex-row justify-center items-center ">
+            <div className="md:px-5 h-2/3 md:h-screen w-screen flex flex-col md:flex-row justify-center items-center text-yellow">
                 <div className="lg:pl-12 h-full sm:pl-0 md:pl-0 text-2xl md:text-3xl w-2/3 leading-7 font-thin flex flex-col justify-center items-center sm:items-start">
                 <span className="">Hi,</span>
-                <span className="py-2">I&#39;m <span className="font-bold text-teal-600 relative inline-block after:content-[''] after:absolute after:bottom-0 after:rounded after:left-0 after:w-full after:h-1.5 after:bg-teal-900">Johad</span></span>
+                <span className="py-2">I&#39;m <span className="font-bold text-orange relative inline-block after:content-[''] after:absolute after:bottom-0 after:rounded after:left-0 after:w-full after:h-1.5 after:bg-red">Johad</span></span>
                 <Typewriter />
                 <Social />
                 <Link >
                     <button id="downloadCV" 
                     onClick={downloadFileAtURL} 
                     value="download" 
-                    className='my-3 border-3 font-bold rounded w-40 bg-teal-500 py-0 sm:py-2 text-white text-lg flex justify-center items-center  hover:bg-teal-600'>
+                    className='my-3 border-3 font-bold rounded w-40 bg-red py-0 sm:py-2 text-white text-lg flex justify-center items-center  hover:bg-orange'>
                         <img className='p-0 w-8 bg-transparent'src={downloadImg} alt="download" />
                         <span className="bg-transparent text-base pl-2">Resume</span></button>
                 </Link>

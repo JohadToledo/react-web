@@ -15,7 +15,7 @@ export default function Social() {
             target="_blank"
             aria-label={name}
           >
-          <div className="stroke-teal-300  hover:stroke-teal-500 ">
+          <div className="stroke-lorange  hover:stroke-teal-500 ">
             <span dangerouslySetInnerHTML={{ __html: icon }}></span>
             </div>
           </a>
