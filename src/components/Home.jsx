@@ -24,7 +24,7 @@ export function Home(){
         return(
             <motion.section 
             variants={{
-            hidden: { opacity: 0, y: 80 },
+            hidden: { opacity: 0, y: -80 },
             visible: { opacity: 1, y: 0 },
             }}
             initial="hidden"
