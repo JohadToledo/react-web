@@ -58,7 +58,7 @@ export function Projects() {
                 href={project.link}
                 rel="noreferrer"
                 target="_blank"
-                className="w-auto title-font text-3xl font-medium text-white mb-3 bg-transparent py-5 hover:text-teal-300"
+                className="w-auto title-font text-3xl font-medium text-white m-4 bg-transparent py-5 hover:text-teal-300"
               >
                 {project.title}
               </a>
