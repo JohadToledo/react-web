@@ -60,7 +60,7 @@ export function Projects() {
                 target="_blank"
                 className="w-auto title-font text-3xl font-medium text-yellow m-4 bg-transparent py-5 hover:text-orayellow"
               >
-                <span className="bg-transparent text-red">Featured Project - </span> {project.title}
+                <span className="bg-transparent text-bordo">Featured Project - </span> {project.title}
               </a>
               <div className="flex flex-col lg:flex-row bg-transparent mx-5 sm:mx-10">
                 <div className="lg:w-[55%] sm:h-96 rounded-[1rem]">
@@ -88,7 +88,7 @@ export function Projects() {
                 {project.technologies.map((technology, index) => (
                   <h3
                     key={index}
-                    className="px-2 sm:px-5 bg-transparent text-xl text-red"
+                    className="px-2 sm:px-5 bg-transparent text-xl text-bordo"
                   >
                     {technology}
                   </h3>

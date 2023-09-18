@@ -3,7 +3,7 @@ import { TypeAnimation } from 'react-type-animation';
 export default function Typewriter() {
   return (
     <TypeAnimation 
-        className='inline-block text-base sm:text-3xl text-lorange'
+        className='inline-block text-base sm:text-3xl text-orayellow bg-transparent'
       sequence={[
         'I am a pragmatic Frontend Developer',
         1500, 

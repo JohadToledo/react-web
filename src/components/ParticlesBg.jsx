@@ -10,25 +10,26 @@ function ParticlesBg (){
       id="tsparticles"
       init={loadParticles}
       options={{
+        'preset': "triangles",
         "fullScreen": {
-            "enable": true,
-            "zIndex": 0
+            "enable": false,
+            "zIndex": -1
         },
         "particles": {
             "number": {
-                "value": 10,
+                "value": 40,
                 "density": {
-                    "enable": false,
+                    "enable": true,
                     "value_area": 800
                 }
             },
             "color": {
-                "value": "#fff"
+                "value": "#5B4F95"
             },
             "shape": {
-                "type": "",
+                "type": "line",
                 "options": {
-                    "sides": 5
+                    "sides": 50
                 }
             },
             "opacity": {
@@ -45,26 +46,26 @@ function ParticlesBg (){
                 "value": 4,
                 "random": false,
                 "anim": {
-                    "enable": false,
+                    "enable": true,
                     "speed": 90,
                     "size_min": 0.8,
                     "sync": false
                 }
             },
             "rotate": {
-                "value": 10,
+                "value": 100,
                 "random": true,
                 "direction": "clockwise",
                 "animation": {
                     "enable": true,
-                    "speed": 50,
+                    "speed": 60,
                     "sync": false
                 }
             },
             "line_linked": {
                 "enable": true,
                 "distance": 600,
-                "color": "#ffffff",
+                "color": "#D56262",
                 "opacity": 0.4,
                 "width": 2
             },
@@ -86,7 +87,7 @@ function ParticlesBg (){
             "events": {
                 "onhover": {
                     "enable": true,
-                    "mode": ["grab"]
+                    "mode": ["repulse"]
                 },
                 "onclick": {
                     "enable": false,
@@ -109,7 +110,7 @@ function ParticlesBg (){
                     "speed": 3
                 },
                 "repulse": {
-                    "distance": 200
+                    "distance": 100
                 },
                 "push": {
                     "particles_nb": 4
@@ -119,13 +120,13 @@ function ParticlesBg (){
                 }
             }
         },
-        "retina_detect": true,
+        "retina_detect": false,
         "background": {
-            "color": "#6E2D62",
+            "color": "",
             "image": "",
-            "position": "50% 50%",
+            "position": "",
             "repeat": "no-repeat",
-            "size": "cover"
+            "size": ""
         }
       }}
     />

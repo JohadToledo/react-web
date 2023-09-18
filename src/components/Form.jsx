@@ -45,7 +45,7 @@ export function Form() {
             </div>
             <div >
             <button
-            className="border-3 rounded w-40 mx-auto bg-red py-2 text-white text-lg flex justify-center items-center  hover:bg-orange"
+            className="border-3 rounded w-40 mx-auto bg-red py-2 text-white text-lg flex justify-center items-center  hover:bg-orange hover:text-bordo"
             type="submit" 
             value="Send"
             >Send</button>
