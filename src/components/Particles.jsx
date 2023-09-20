@@ -65,7 +65,7 @@ function ParticlesBg (){
             "line_linked": {
                 "enable": true,
                 "distance": 600,
-                "color": "#D56262",
+                "color": "#0B0721",
                 "opacity": 0.4,
                 "width": 2
             },

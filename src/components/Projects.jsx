@@ -52,16 +52,19 @@ export function Projects() {
           {projects.map((project) => (
             <div
               key={project.id}
-              className="shadow-xl shadow-indigo-950 flex flex-col items-center bg-indigo-900 rounded-[1rem] m-5 sm:m-12"
-            >
+              className="card shadow-xl shadow-indigo-950 flex flex-col items-center bg-indigo-900 rounded-[1rem] m-5 sm:m-12"
+            > 
+              <div className="w-auto title-font text-3xl m-4 bg-transparent py-5 ">
+              <span className="bg-transparent text-cel text-lightindi">Featured Project - </span>
               <a
                 href={project.link}
                 rel="noreferrer"
                 target="_blank"
-                className="w-auto title-font text-3xl font-medium text-white m-4 bg-transparent py-5 hover:text-teal-300"
+                className=" font-medium hover:text-indigo text-aqua bg-transparent"
               >
-                {project.title}
+                  {project.title}
               </a>
+              </div>
               <div className="flex flex-col lg:flex-row bg-transparent mx-5 sm:mx-10">
                 <div className="lg:w-[55%] sm:h-96 rounded-[1rem]">
                   <a
@@ -84,7 +87,7 @@ export function Projects() {
                   </p>
                 </div>
               </div>
-              <div className=" bg-transparent flex py-5 sm:py-10">
+              <div className="text-lightindi bg-transparent flex py-5 sm:py-10">
                 {project.technologies.map((technology, index) => (
                   <h3
                     key={index}

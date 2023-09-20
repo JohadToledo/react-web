@@ -7,7 +7,7 @@ export function Skills() {
   return (
       <section
         id="skills"
-        className="overflow-hidden w-screen max-w-7xl h-auto"
+        className="overflow-hidden w-screen max-w-7xl h-screen"
       >
         <div className="">
           <div className="text-center">
@@ -21,7 +21,7 @@ export function Skills() {
               {skills.map((skills) => (
                 <div
                   key={skills}
-                  className="border-solid border-teal-900 border-2 p-3 sm:p-2 mx-7 my-2"
+                  className="border-solid border-petroleo border-2 p-3 sm:p-2 mx-7 my-2"
                 >
                   <div className="text-white flex">
                   <img className='mr-3 sm:w-6 hidden sm:flex bg-transparent'src={Check} alt="checklist" />
