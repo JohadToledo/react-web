@@ -52,7 +52,7 @@ export function Projects() {
           {projects.map((project) => (
             <div
               key={project.id}
-              className="card shadow-xl shadow-indigo-950 flex flex-col items-center bg-indigo-900 rounded-[1rem] m-5 sm:m-12"
+              className="shadow-xl shadow-darkpetro flex flex-col items-center bg-petroleo rounded-[1rem] m-5 sm:m-12"
             > 
               <div className="w-auto title-font text-3xl m-4 bg-transparent py-5 ">
               <span className="pl-2 sm:pl-0 bg-transparent text-cel text-lightindi font-mono"> Featured Project -  </span>
