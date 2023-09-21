@@ -11,14 +11,14 @@ export function Header() {
       <div className="flex justify-between items-center sm:px-10">
         <div className=" "> Johad Toledo </div>
         <div className=" ">
-          <nav className="hidden gap-5 sm:flex  ">
-            <Link className="" to="projects">
+          <nav className="hidden gap-5 sm:flex">
+            <Link className="cursor-pointer" to="projects">
               Projects
             </Link>
-            <Link className="" to="skills">
+            <Link className="cursor-pointer" to="skills">
               Skills
             </Link>
-            <Link className="" to="contact">
+            <Link className="cursor-pointer" to="contact">
               Contacts
             </Link>
           </nav>

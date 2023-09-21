@@ -37,7 +37,7 @@ export function Home(){
             <div className="md:px-5 h-screen md:h-screen w-screen flex flex-col md:flex-row justify-center items-center bg-transparent">
                 <div className="bg-transparent lg:pl-12 h-full sm:pl-0 md:pl-0 text-2xl md:text-3xl w-2/3 leading-7 font-thin flex flex-col justify-center items-center sm:items-start">
                 <span className="bg-transparent text-cel">Hi,</span>
-                <span className="bg-transparent py-2 text-cel">I&#39;m <span className="font-bold text-aqua relative inline-block after:content-[''] after:absolute after:bottom-0 after:rounded after:left-0 after:w-full after:h-1.5 after:bg-petroleo">Johad</span></span>
+                <span className="bg-transparent py-2 text-cel">I am <span className="font-bold text-aqua relative inline-block after:content-[''] after:absolute after:bottom-0 after:rounded after:left-0 after:w-full after:h-1.5 after:bg-petroleo">Johad</span></span>
                 <Typewriter />
                 <Social />
                 <Link >
