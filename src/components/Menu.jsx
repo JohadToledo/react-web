@@ -3,7 +3,7 @@ import { Link } from "react-scroll";
 
 export default function Menu() {
   const [isOpen, setIsOpen] = useState(false);
-  const genericHamburgerLine = `h-1 w-6 my-1 rounded-full bg-teal-500 transition ease transform duration-300`;
+  const genericHamburgerLine = `h-1 w-6 my-1 rounded-full bg-petroleo transition ease transform duration-300`;
 
   const toggleDropdown = () => {
     setIsOpen(!isOpen);
@@ -12,7 +12,7 @@ export default function Menu() {
   return (
     <div className="sm:hidden">
       <button
-        className="fixed right-4 top-4 z-10 flex flex-col h-12 w-12 border-2 border-teal-500 rounded justify-center items-center group"
+        className="fixed right-4 top-4 z-10 flex flex-col h-12 w-12 border-2 border-petroleo rounded justify-center items-center group"
         onClick={toggleDropdown}
       >
         <div

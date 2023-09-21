@@ -5,7 +5,7 @@ export const projects = [
         " E-Commerce built in React.js that brings information from a Rest API and is divided into components, each component handles the information using React Hooks and Redux is used to share information between.",
       image: 'assets/Petra.png',
       link: "https://codealo-commerce.vercel.app/",
-      technologies : ['CSS', 'JavaScript', 'HTML' ]
+      technologies : ['REST API', 'React', 'Redux' ]
     },
     {
       title: "To Buy List",
@@ -21,7 +21,7 @@ export const projects = [
         "Google clone with html and css",
       image: 'assets/troogle.png',
       link: "https://troogle.web.app/",
-      technologies : ['CSS', 'JavaScript', 'HTML' ]
+      technologies : ['CSS', 'HTML' ]
     },
     {
       title: "Epic Todo App",
