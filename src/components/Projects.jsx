@@ -38,8 +38,7 @@ export function Projects() {
           <h1 className="my-9 text-3xl">Projects</h1>
           <p className="text-xl px-10">
             Welcome to my project gallery, where you can explore a collection of
-            endeavors that showcase <br />
-            my dedication to <strong>crafting</strong> exceptional digital
+            endeavors that showcase my dedication to crafting exceptional digital
             experiences.
           </p>
         </div>
