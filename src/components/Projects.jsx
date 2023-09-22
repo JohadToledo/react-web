@@ -31,7 +31,7 @@ export function Projects() {
   return (
     <section
       id="projects"
-      className="overflow-hidden w-screen max-w-7xl h-auto text-center flex justify-center"
+      className="overflow-hidden w-screen max-w-7xl h-auto text-center flex justify-center pt-10"
     >
       <div className="container max-w-[980px] flex flex-col justify-center items-center">
         <div className="">

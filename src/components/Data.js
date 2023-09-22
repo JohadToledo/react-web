@@ -37,8 +37,8 @@ export const projects = [
       'HTML',
       'CSS',
       'JavaScript',
-      'React',
       'Firebase',
+      'React',
       'Tailwind'
   ] 
 

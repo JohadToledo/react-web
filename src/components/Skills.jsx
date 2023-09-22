@@ -7,7 +7,7 @@ export function Skills() {
   return (
       <section
         id="skills"
-        className="overflow-hidden w-screen max-w-7xl h-screen"
+        className="overflow-hidden w-screen max-w-7xl h-screen pt-10"
       >
         <div className="">
           <div className="text-center">

@@ -20,7 +20,7 @@ export function Contact() {
 
         
     return (
-    <section id="contact" className="h-screen w-screen max-w-7xl flex flex-col items-center">
+    <section id="contact" className="h-screen w-screen max-w-7xl flex flex-col items-center pt-10">
         <div className="my-9">
         <h1 className="text-3xl">
             Get in Touch
