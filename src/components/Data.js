@@ -2,7 +2,7 @@ export const projects = [
     {
       title: "Petra",
       description:
-        " E-Commerce built in React.js that brings information from a Rest API and is divided into components, each component handles the information using React Hooks and Redux is used to share information between.",
+        " is an E-Commerce built in React.js that brings information from a Rest API and is divided into components, each component handles the information using React Hooks and Redux is used to share information between them.",
       image: 'assets/Petra.png',
       link: "https://codealo-commerce.vercel.app/",
       technologies : ['REST API', 'React', 'Redux' ]
@@ -10,7 +10,7 @@ export const projects = [
     {
       title: "To Buy List",
       description:
-        "This app is built with Vanilla JavaScript, HTML and Vanilla CSS. It's like a To-Do list app that permits making a list of different.",
+        " is an app built with Vanilla JavaScript, HTML and Vanilla CSS. It's like a To-Do list app that permits making a list of different sorts of things.",
       image: 'assets/Tobuylist.png',
       link: "https://tobuylist.web.app/",
       technologies : ['CSS', 'JavaScript', 'HTML' ]
@@ -18,7 +18,7 @@ export const projects = [
     {
       title: "Google Clone",
       description:
-        "Google clone with html and css",
+        " is just a clone using HTML and vanilla CSS. The idea was put into practice in basic languages such as HTML and CSS",
       image: 'assets/troogle.png',
       link: "https://troogle.web.app/",
       technologies : ['CSS', 'HTML' ]
@@ -26,7 +26,7 @@ export const projects = [
     {
       title: "Epic Todo App",
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
+        " Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
       image: 'assets/troogle.png',
       link: "https://pythonbootcamp.com",
       technologies : ['CSS', 'JavaScript', 'HTML' ]

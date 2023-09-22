@@ -38,7 +38,7 @@ export function Projects() {
           <h1 className="my-9 text-3xl">Projects</h1>
           <p className="text-xl px-10">
             Welcome to my project gallery, where you can explore a collection of
-            endeavors that showcase my dedication to crafting exceptional digital
+            endeavors that showcase my dedication to <strong>crafting</strong> exceptional digital
             experiences.
           </p>
         </div>
@@ -81,7 +81,7 @@ export function Projects() {
                 </div>
                 <div className="py-5 sm:px-5 sm:py-2.5 lg:w-1/2 flex items-center justify-center sm:text-xl bg-transparent">
                   <p className="md:w-4/5 leading-relaxed bg-transparent">
-                    {project.description}
+                  <span className="link bg-transparent text-indigo hover:text-aqua">{project.title}</span>{project.description}
                   </p>
                 </div>
               </div>
