@@ -12,13 +12,13 @@ export function Header() {
         <div className=" "> Johad Toledo </div>
         <div className=" ">
           <nav className="hidden gap-5 sm:flex">
-            <Link className="cursor-pointer" to="projects">
+            <Link className="cursor-pointer font-mono" to="projects">
               Projects
             </Link>
-            <Link className="cursor-pointer" to="skills">
+            <Link className="cursor-pointer font-mono" to="skills">
               Skills
             </Link>
-            <Link className="cursor-pointer" to="contact">
+            <Link className="cursor-pointer font-mono" to="contact">
               Contacts
             </Link>
           </nav>
