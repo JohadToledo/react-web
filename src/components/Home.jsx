@@ -12,7 +12,7 @@ import Particles from './Particles';
 
 export function Home(){
       const downloadFileAtURL = () => {
-          const pdfUrl = 'public/assets/JohadToledoCV.pdf';
+          const pdfUrl = '/assets/JohadToledoCV.pdf';
           const link = document.createElement('a');
           link.href = pdfUrl;
           link.download = 'JohadToledoCV.pdf'; 
