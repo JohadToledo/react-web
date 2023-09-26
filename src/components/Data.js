@@ -23,14 +23,14 @@ export const projects = [
       link: "https://troogle.web.app/",
       technologies : ['CSS', 'HTML' ]
     },
-    {
-      title: "Epic Todo App",
-      description:
-        " Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-      image: 'assets/troogle.png',
-      link: "https://pythonbootcamp.com",
-      technologies : ['CSS', 'JavaScript', 'HTML' ]
-    },
+    // {
+    //   title: "Epic Todo App",
+    //   description:
+    //     " Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
+    //   image: 'assets/troogle.png',
+    //   link: "https://pythonbootcamp.com",
+    //   technologies : ['CSS', 'JavaScript', 'HTML' ]
+    // },
   ];
 
   export const skills = [
