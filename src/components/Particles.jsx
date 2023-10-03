@@ -27,7 +27,7 @@ function ParticlesBg (){
                 "value": "#5B4F95"
             },
             "shape": {
-                "type": "line",
+                "type": "lines",
                 "options": {
                     "sides": 50
                 }

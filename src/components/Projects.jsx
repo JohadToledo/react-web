@@ -2,12 +2,11 @@ import { projects } from "./Data.js";
 import { useRef, useEffect } from "react";
 
 export function Projects() {
-  const targetRef = useRef(null);
+  const fadeInRefs = [useRef(null), useRef(null), useRef(null)];
 
-  const handleAnimation = () => {
-    const targetElement = targetRef.current;
+  const handleAnimation = (element) => {
     setTimeout(() => {
-      targetElement.classList.add("fade-in");
+      element.classList.add("fade-in");
     }, 400);
   };
 
@@ -15,13 +14,16 @@ export function Projects() {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          handleAnimation();
+          console.log("interscting", entry.target);
+          handleAnimation(entry.target);
           observer.unobserve(entry.target);
         }
       });
     });
 
-    observer.observe(targetRef.current);
+    for (const ref of fadeInRefs) {
+      observer.observe(ref.current);
+    }
 
     return () => {
       observer.disconnect();
@@ -38,30 +40,30 @@ export function Projects() {
           <h1 className="my-9 text-3xl">Projects</h1>
           <p className="text-xl px-10">
             Welcome to my project gallery, where you can explore a collection of
-            endeavors that showcase my dedication to <strong>crafting</strong> exceptional digital
-            experiences.
+            endeavors that showcase my dedication to <strong>crafting</strong>{" "}
+            exceptional digital experiences.
           </p>
         </div>
-        <div
-          ref={targetRef}
-          className="flex flex-col py-10 opacity-0"
-        >
-          {projects.map((project) => (
+        <div className="flex flex-col py-10 ">
+          {projects.map((project, index) => (
             <div
+              ref={fadeInRefs[index]}
               key={project.id}
-              className="shadow-xl shadow-darkpetro flex flex-col items-center bg-petroleo rounded-[1rem] m-5 sm:m-12"
-            > 
+              className="opacity-0 shadow-xl shadow-darkpetro flex flex-col items-center bg-petroleo rounded-[1rem] m-5 sm:m-12"
+            >
               <div className="w-auto title-font text-3xl m-4 bg-transparent py-5">
-              <span className="pl-2 sm:pl-0 bg-transparent text-cel text-lightindi font-mono"> Featured Project - </span>
-              <a
-              
-                href={project.link}
-                rel="noreferrer"
-                target="_blank"
-                className="font-medium hover:text-indigo text-aqua bg-transparent link"
-              >
-                {project.title}
-              </a>
+                <span className="pl-2 sm:pl-0 bg-transparent text-cel text-lightindi font-mono">
+                  {" "}
+                  Featured Project -{" "}
+                </span>
+                <a
+                  href={project.link}
+                  rel="noreferrer"
+                  target="_blank"
+                  className="font-medium hover:text-indigo text-aqua bg-transparent link"
+                >
+                  {project.title}
+                </a>
               </div>
               <div className="flex flex-col lg:flex-row bg-transparent mx-5 sm:mx-10">
                 <div className="lg:w-[55%] sm:h-80 rounded-[1rem]">
@@ -81,7 +83,10 @@ export function Projects() {
                 </div>
                 <div className="py-5 sm:px-5 sm:py-2.5 lg:w-1/2 flex items-center justify-center sm:text-xl bg-transparent">
                   <p className="md:w-4/5 leading-relaxed bg-transparent">
-                  <span className="link bg-transparent text-indigo hover:text-aqua">{project.title}</span>{project.description}
+                    <span className="link bg-transparent text-indigo hover:text-aqua">
+                      {project.title}
+                    </span>
+                    {project.description}
                   </p>
                 </div>
               </div>

@@ -24,7 +24,6 @@
 }
 
 *{
-  background-color: #1b1b32;
   font-family: 'Poppins', sans-serif;
 }
 
@@ -34,6 +33,9 @@ body {
   flex-direction: column;
   align-items: center;
   color:rgb(199 210 254);
+  background-color: #1b1b32;
+  width: 100vw;
+  overflow-x: hidden;
 }
 
 
@@ -54,9 +56,11 @@ body {
 }
 
 #tsparticles{
-  width: 100%;
+  width: 100vw;
   height: 100vh;
+  background-image: linear-gradient(#2d2d53, #1b1b32);
 }
+
 
 
 .link {
