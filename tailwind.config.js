@@ -36,6 +36,8 @@ export default {
         'cel': '#328899',
         'darkgrey':'#484660',
         'aqua': '#83D6BB',
+        'card': '#2b2a4d',
+        'lightcard':'#2d2d53'
       },
       fontFamily: {
         'display': 'Inter',

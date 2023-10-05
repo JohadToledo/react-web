@@ -49,7 +49,7 @@ export function Projects() {
             <div
               ref={fadeInRefs[index]}
               key={project.id}
-              className="opacity-0 shadow-xl shadow-darkpetro flex flex-col items-center bg-petroleo rounded-[1rem] sm:my-12"
+              className="opacity-0 shadow-xl shadow-lightcard flex flex-col items-center bg-card rounded-[1rem] sm:my-12"
             >
               <div className="w-auto title-font text-3xl m-4 bg-transparent py-5">
                 <span className="pl-2 sm:pl-0 bg-transparent text-cel text-lightindi font-mono">
@@ -91,7 +91,7 @@ export function Projects() {
                   </p>
                 </div>
               </div>
-              <div className="text-lightindi bg-transparent flex py-5 sm:py-10">
+              <div className="text-indigo bg-transparent flex py-5 sm:py-10">
                 {project.technologies.map((technology, index) => (
                   <h3
                     key={index}
