@@ -37,6 +37,11 @@ export default {
         'darkgrey':'#484660',
         'aqua': '#83D6BB',
       },
+      fontFamily: {
+        'display': 'Inter',
+        'displayy':['-apple-system','BlinkMacSystemFont','Segoe UI','Roboto','Oxygen','Ubuntu','Cantarell','Fira Sans','Droid Sans','Helvetica Neue','sans-serif'],
+        'body': "Open Sans",
+      },
     extend: {},
   },
   plugins: []

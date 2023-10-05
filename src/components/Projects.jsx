@@ -49,7 +49,7 @@ export function Projects() {
             <div
               ref={fadeInRefs[index]}
               key={project.id}
-              className="opacity-0 shadow-xl shadow-darkpetro flex flex-col items-center bg-petroleo rounded-[1rem] m-5 sm:m-12"
+              className="opacity-0 shadow-xl shadow-darkpetro flex flex-col items-center bg-petroleo rounded-[1rem] sm:my-12"
             >
               <div className="w-auto title-font text-3xl m-4 bg-transparent py-5">
                 <span className="pl-2 sm:pl-0 bg-transparent text-cel text-lightindi font-mono">
@@ -66,7 +66,7 @@ export function Projects() {
                 </a>
               </div>
               <div className="flex flex-col lg:flex-row bg-transparent mx-5 sm:mx-10">
-                <div className="lg:w-[55%] sm:h-80 rounded-[1rem]">
+                <div className="lg:w-[55%] sm:h-72 rounded-[1rem]">
                   <a
                     href={project.link}
                     key={project.image}
@@ -82,7 +82,7 @@ export function Projects() {
                   </a>
                 </div>
                 <div className="py-5 sm:px-5 sm:py-2.5 lg:w-1/2 flex items-center justify-center sm:text-xl bg-transparent">
-                  <p className="md:w-4/5 leading-relaxed bg-transparent">
+                  <p className="md:w-4/5 leading-relaxed bg-transparent font-displayy">
                     <span className="link bg-transparent text-indigo hover:text-aqua">
                       {project.title}
                     </span>
