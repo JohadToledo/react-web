@@ -54,7 +54,8 @@ export function Projects() {
               <div className="w-auto title-font text-3xl m-4 bg-transparent py-5">
                 <span className="pl-2 sm:pl-0 bg-transparent text-cel text-lightindi font-mono">
                   {" "}
-                  Featured Project -{" "}
+                  <span ><a className="link bg-transparent text-indigo hover:text-aqua " href={project.code}>Git Repo</a> - </span>
+                  {/* Featured Project -{" "} */}
                 </span>
                 <a
                   href={project.link}

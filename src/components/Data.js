@@ -2,25 +2,28 @@ export const projects = [
     {
       title: "Petra",
       description:
-        " is an E-Commerce built in React.js that brings information from a Rest API and is divided into components, each component handles the information using React Hooks and Redux is used to share information between them.",
+        " is an E-Commerce built with React.js, it brings the information from a Rest API and when ready divide them into components, each component handles the information using React Hooks. Redux is used to share information between each component.",
       image: 'assets/Petra.png',
       link: "https://codealo-commerce.vercel.app/",
+      code: "https://github.com/JohadToledo/React-Ecommerce",
       technologies : ['REST API', 'React', 'Redux' ]
     },
     {
       title: "To Buy List",
       description:
-        " is an app built with Vanilla JavaScript, HTML and Vanilla CSS. It's like a To-Do list app that permits making a list of different sorts of things.",
+        " is like a To-Do list app which permits making a list of different sorts of whishes that people may want to buy. It is built with Vanilla JavaScript, HTML and Vanilla CSS.",
       image: 'assets/Tobuylist.png',
       link: "https://tobuylist.web.app/",
+      code: "https://github.com/JohadToledo/ToBuyList",
       technologies : ['CSS', 'JavaScript', 'HTML' ]
     },
     {
       title: "Google Clone",
       description:
-        " is just a clone using HTML and vanilla CSS. The idea was put into practice in basic languages such as HTML and CSS",
+        " is a clone using just HTML and vanilla CSS. The idea was put into practice in basic languages such as HTML and CSS which plays an important role in modern web pages.",
       image: 'assets/troogle.png',
       link: "https://troogle.web.app/",
+      code: "https://github.com/JohadToledo/SummerHack/tree/master/Reto3",
       technologies : ['CSS', 'HTML' ]
     },
     // {
