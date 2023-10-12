@@ -51,12 +51,24 @@ export function Projects() {
               key={project.id}
               className="opacity-0 shadow-xl shadow-lightcard flex flex-col items-center bg-card rounded-[1rem] sm:my-16"
             >
-              <div className="w-auto title-font text-3xl m-4 bg-transparent py-5">
+              <div
+                className="w-auto title-font text-3xl m-4 bg-transparent py-5"
+                //style={{ backgroundColor: index % 2 === 0 ? "pink" : "green" }}
+              >
                 <span className="pl-2 sm:pl-0 bg-transparent text-cel text-lightindi font-mono">
                   {" "}
-                  <span ><a className="link bg-transparent text-indigo hover:text-aqua " href={project.code}>Git Repo</a> - </span>
+                  <span>
+                    <a
+                      className="link bg-transparent text-indigo hover:text-aqua "
+                      href={project.code}
+                    >
+                      Git Repo
+                    </a>{" "}
+                    -{" "}
+                  </span>
                   {/* Featured Project -{" "} */}
                 </span>
+                {index % 2 === 0 ? <span>even</span> : <span>odd</span>}
                 <a
                   href={project.link}
                   rel="noreferrer"
