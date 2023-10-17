@@ -5,7 +5,7 @@ export function Header() {
   return (
     <section
       id="header"
-      style={{ zIndex: 1 }}
+      style={{ zIndex: 0 }}
       className="p-5 fixed  w-screen lg:w-screen md:w-screen sm:w-screen lg:max-w-7xl mx-auto   text-2xl text-yellow"
     >
       <div className="flex justify-between   items-center">
