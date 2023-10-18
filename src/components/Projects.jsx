@@ -49,23 +49,27 @@ export function Projects() {
           ref={targetRef}
           className="flex flex-col max-[980px] py-10 opacity-0"
         >
+
+ 
           {projects.map((project) => (
             <div
               key={project.id}
               className="flex flex-col items-center bg-transparent rounded-[1rem] m-5 sm:m-12 z-1"
             >
-              <div className="max-w-5xl w-80 m-0 m-auto bg-aqua h-5/6 border-2 border-white bg-yellow text-red rounded-3xl pb-12 relative">
-                  <div className="w-full; h-[500px] rounded-3xl flex flex-col bg-transparent" >
-                  <div className="h-16 flex justify-end p-5  bg-yellow mt-2 gap-1">
+              <div className="max-w-5xl w-80 m-0 m-auto bg-aqua h-5/6 border-2 border-white text-red rounded-3xl relative">
+                  <div 
+                  style={{ backgroundImage: "linearGradient(0deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.1) 100%)" }} 
+                  className="linearGradient w-full; h-[500px] rounded-3xl flex flex-col bg-transparent " >
+                  <div className="h-16 flex justify-end p-5  bg-transparent mt-2 gap-1 rounded-3xl ">
                     <button>
                     <a
                     href={project.link}
                     key={project.image}
                     rel="noreferrer"
                     target="_blank"
-                    className="rounded-[1rem] w-[30rem] h-96  opacity-70 hover:opacity-100"
+                    className="rounded-[1rem] w-[30rem] h-96  opacity-70 hover:opacity-100 rounded-2xl"
                   >
-                    <div className="stroke-orayellow  hover:stroke-lblue bg-transparent">
+                    <div className="stroke-red hover:stroke-lblue bg-transparent m-auto rounded-2xl">
                     <span dangerouslySetInnerHTML={{ __html: project.iconGit }}></span>
                     </div>
                   </a>
@@ -78,14 +82,15 @@ export function Projects() {
                     target="_blank"
                     className="rounded-[1rem] w-[30rem] h-96  opacity-70 hover:opacity-100"
                   >
-                    <div className="stroke-orayellow  hover:stroke-lblue bg-transparent">
+                    <div className="stroke-red stroke-[0.5] hover:stroke-black bg-transparent">
                     <span dangerouslySetInnerHTML={{ __html: project.iconLink }}></span>
                     </div>
                   </a>
                     </button>
                   </div>
-                  <div  className="sm:w-1/2 bg-yellow ">
+                  <div  className="sm:w-1/2 bg-transparent ">
                             <h2 className="bg-transparent">{project.title}</h2>
+                            <p className="bg-transparent p-5">{project.description}</p>
                   </div>
                   {/* <div className="flex flex-col-reverse h-full rounded-3xl bg-yellow"> */}
                         <div className="w-4/5 flex items-end sm:mr-5">

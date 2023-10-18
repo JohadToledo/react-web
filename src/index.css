@@ -49,6 +49,14 @@ body {
   }
 }
 
+svg{
+  background-color: transparent;
+}
+
+.linearGradient{
+background-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 10%, rgba(104, 54, 54, 0.1) 100%)
+}
+
 .fade-in {
   animation: fadeIn 0.5s ease-in-out;
   animation-fill-mode: both;
