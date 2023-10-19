@@ -54,12 +54,11 @@ export function Projects() {
           {projects.map((project) => (
             <div
               key={project.id}
-              className="flex flex-col items-center bg-transparent rounded-[1rem] m-5 sm:m-12 z-1"
+              className="linearGradient flex flex-col items-center rounded-3xl m-5 sm:m-12 z-1"
             >
-              <div className="max-w-5xl w-80 m-0 m-auto bg-aqua h-5/6 border-2 border-white text-red rounded-3xl relative">
+              <div className="max-w-5xl w-80 m-0 m-auto h-5/6 border-2 border-white text-red rounded-3xl relative">
                   <div 
-                  style={{ backgroundImage: "linearGradient(0deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.1) 100%)" }} 
-                  className="linearGradient w-full; h-[500px] rounded-3xl flex flex-col bg-transparent " >
+                  className=" w-full; h-[500px] rounded-3xl flex flex-col bg-transparent " >
                   <div className="h-16 flex justify-end p-5  bg-transparent mt-2 gap-1 rounded-3xl ">
                     <button>
                     <a
