@@ -68,3 +68,45 @@ background-image: linear-gradient(0deg, rgba(102, 42, 91, 0) 0%, rgba(80, 31, 71
   /* position:relative; */
   /* z-index: -1; */
 }
+
+.grainy-background::before {
+  content: "";
+  position: absolute;
+  border-radius: 1.5rem;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: repeating-linear-gradient(
+    90 deg,
+    transparent,
+    transparent 5px,
+    rgba(0, 0, 0, 0.1) 5px,
+    rgba(0, 0, 0, 0.1) 10px
+  );
+  background: repeating-radial-gradient(
+    circle at -100px -100px,
+    rgba(155, 77, 201, 0.1),
+    rgba(16, 21, 65, 0.966) 2px,
+    transparent 0.1px,
+    transparent 0.1px
+  );
+  opacity: 0.8; /* Adjust the opacity as needed */
+  z-index: -1;
+}
+
+.accent {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: var(--border-radius);
+  background: radial-gradient(30% 60 circle at center -200px, var(--accent-color) 0%, transparent 100%);
+  opacity: var(--accent-opacity);
+  transition: opacity 0.3s ease-out;
+  pointer-events: none;
+}
+
+.gradient{
+  background-image: linear-gradient(0deg, rgba(255, 255, 255, 0) 100%, rgba(255, 255, 255, 0.1) 0%);
+
+}
