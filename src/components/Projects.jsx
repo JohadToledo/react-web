@@ -68,7 +68,7 @@ export function Projects() {
                   </span>
                   {/* Featured Project -{" "} */}
                 </span>
-                {index % 2 === 0 ? <span>even</span> : <span>odd</span>}
+                {/* {index % 2 === 0 ? <span>even</span> : <span>odd</span>} */}
                 <a
                   href={project.link}
                   rel="noreferrer"
