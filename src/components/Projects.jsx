@@ -49,7 +49,7 @@ export function Projects() {
             <div
               ref={fadeInRefs[index]}
               key={project.id}
-              className="opacity-0 shadow-xl shadow-lightcard flex flex-col items-center bg-card rounded-[1rem] sm:my-16"
+              className="opacity-0 shadow-xl shadow-lightcard flex flex-col items-center bg-card rounded-[1rem] sm:my-16 my-5"
             >
               <div
                 className="w-auto title-font text-3xl m-4 bg-transparent py-5"
