@@ -54,24 +54,23 @@ export function Projects() {
             
             <div
               key={project.id}
-              className="relative bg-cover bg-no-repeat bg-center z-10 h-[550px] w-full items-stretch justify-center py-0 sm:h-[700px] sm:w-[100%] md:h-[650px] md:w-[100%] xl:max-w-[1400px] lg:h-[500px] mb-10"
+              className="relative bg-cover bg-no-repeat bg-center z-10 h-[550px] w-full items-stretch justify-center py-0 sm:h-[700px] sm:w-[100%] md:h-[650px] md:w-[100%] xl:max-w-[1400px] lg:h-[500px]"
             >
                   <img className={`absolute -bottom-0 w-[70%] sm:w-[85%] md:w-[60%] lg:max-w-[50%] ${
                     index % 2 === 0 ? 'left-0 rounded-bl-3xl' : 'right-0 rounded-br-3xl'
                     }`} 
-                    style={{boxShadow: "5px -3px 13px #7b7b7b"}}
+                    style={{boxShadow: "0px 0px 13px 4px #7b7b7b"}}
                           alt="portfolio" 
                           src={project.image}/
                           >
                   <div
-                  className={`absolute top-0 text-[#0E1016] mt-6 flex items-center justify-center gap-4 lg:mt-10 ${
+                  className={`absolute top-0 text-[#0E1016] mt-6  flex items-center justify-center gap-4 lg:mt-10 ${
                     index % 2 === 0 ? 'right-0 lg:mr-14 mr-8' : 'left-0 ml-8 lg:ml-14'
                   }`}
                   >
                     
                       <a href={project.gitLink} key={project.image} rel="noreferrer" target="_blank"
-                      className="rounded-full w-[20px] bg-lorange p-5 text-[20px] md:w-[25px] md:text-[24px] lg:w-[65px] lg:text-[28px]"
-                      // className="rounded-[1rem] w-[30rem] h-96  opacity-70 hover:opacity-100 rounded-2xl"
+                      className="rounded-full w-[20px] bg-lorange p-5 text-[20px] md:w-[25px] md:text-[24px] lg:w-[65px] lg:text-[28px] box-content lg:box-border"
                       >
                         <div className="stroke-red hover:stroke-lblue bg-transparent m-auto rounded-2xl">
                           <span dangerouslySetInnerHTML={{ __html: project.iconGit }}></span>
@@ -79,28 +78,25 @@ export function Projects() {
                       </a>
                     
                       <a href={project.link} key={project.image} rel="noreferrer" target="_blank"
-                       className="w-[20px] rounded-full bg-lorange p-5 text-[20px] md:w-[25px] md:text-[24px] lg:w-[65px] lg:text-[28px]"
-                      // className="rounded-[1rem] w-[30rem] h-96  opacity-70 hover:opacity-100"
+                      className="w-[20px] rounded-full bg-lorange p-5 text-[20px] md:w-[25px] md:text-[24px] lg:w-[65px] lg:text-[28px] box-content lg:box-border"
                       >
-                        <div className="stroke-red stroke-[0.5] hover:stroke-black bg-transparent opacity-100">
+                        <div className="stroke-red stroke-[0.5] hover:stroke-black bg-transparent">
                           <span dangerouslySetInnerHTML={{ __html: project.iconLink }}></span>
                         </div>
                       </a>
-                   
                   </div>
                   <div
                   className={`absolute text-white top-32 ml-10 md:mr-12 lg:top-52 lg:ml-4 mb-10 md:mb-16 lg:mb-14 ${
-                    index % 2 === 0 ?  'right-0 mr-0 ml-10 md:right-0 md:ml-0 lg:right-10 lg:top-60  lg:mr-4 mb-10  md:mb-16 lg:mb-14' :'left-10 ml-0 md:mr-12 lg:top-52 lg:ml-4 mb-10  md:mb-16 lg:mb-14 ' 
+                    index % 2 === 0 ?  'right-0 mr-0 ml-10 sm:right-14 md:right-0 md:ml-0 lg:right-10 lg:top-60  lg:mr-4 mb-10  md:mb-16 lg:mb-14' :'left-10 ml-0 md:mr-12 lg:top-52 lg:ml-4 mb-10  md:mb-16 lg:mb-14 ' 
                     }`}
-                  // className="absolute text-white  left-10 top-32 ml-0 md:mr-12 lg:top-52 lg:ml-4 mb-10  md:mb-16 lg:mb-14 "
-                  // className="bg-transparent opacity-100 absolute top-14 lg:flex-raw"
+                  
                   >
-                            <h2 className="bg-transparent">{project.title}</h2>
+                            <h1 className="bg-transparent text-3xl pb-2">{project.title}</h1>
                             <p>This is the whole text that I gonna display here</p>
                             {/* <p className="bg-transparent p-5 pb-5">{project.description}</p> */}
                   </div>                  
                   <div className="accent"></div>
-              <Grainy w="100%" h="100%" svgBorderRadius="22px" style={{ borderRadius: '24px', PointerEvent: 'none'}} />
+                  <Grainy w="100%" h="100%" svgBorderRadius="22px" style={{ borderRadius: '24px', PointerEvent: 'none'}} />
             </div>
           ))}
         </div>
