@@ -61,8 +61,6 @@ body {
   background-image: linear-gradient(#2d2d53, #1b1b32);
 }
 
-
-
 .link {
   background: linear-gradient(currentColor 0 0) left var(--p, 0%) bottom 0 /
       var(--d, 0%) 3px no-repeat,
@@ -78,3 +76,4 @@ body {
   transition: cubic-bezier(0, 0, 0, 0) 0s, background-size 0.3s 0.3s;
   transition-delay: 50ms;
 }
+
