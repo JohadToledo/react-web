@@ -11,6 +11,7 @@ import ParticlesBg from './ParticlesBg';
 
 
 
+
 export function Home(){
       const downloadFileAtURL = () => {
           const pdfUrl = 'public/assets/JohadToledo-CV.pdf';

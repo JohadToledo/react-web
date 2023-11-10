@@ -27,7 +27,8 @@ export default {
       'orange':'#F48E5A',
       'orayellow':'#FFC25A',
       'yellow':'#F9F871',
-      'lblue':'#5B4F95'
+      'lblue':'#5B4F95',
+      'bg-dark': '#0e1016'
 
     },
     extend: {},
