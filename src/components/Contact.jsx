@@ -20,9 +20,9 @@ export function Contact() {
 
         
     return (
-    <section id="contact" className="h-screen w-screen max-w-7xl flex flex-col items-center pt-10">
-        <div className="my-9">
-        <h1 className="text-3xl">
+    <section id="contact" className="h-screen w-screen max-w-7xl flex flex-col items-center py-16 md:py-20 lg:py-20">
+        <div className="">
+        <h1 className="my-10 text-[40px] font-bold leading-[0.9em] tracking-tighter text-[#e4ded7] sm:text-[45px] md:mb-16 md:text-[60px] lg:text-[80px]">
             Get in Touch
         </h1>
         </div>

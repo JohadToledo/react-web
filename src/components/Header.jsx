@@ -5,7 +5,7 @@ export function Header() {
   return (
     <section
       id="header"
-      className="p-5 fixed w-screen lg:w-screen md:w-screen sm:w-screen mx-auto text-2xl text-petroleo z-10 bg-indigo shadow-xl shadow-lightcard"
+      className="p-5 fixed w-screen lg:w-screen md:w-screen sm:w-screen mx-auto text-2xl text-petroleo z-50 bg-indigo "
     >
       <div className="flex justify-between items-center sm:px-10">
         <div className=""> Johad Toledo </div>

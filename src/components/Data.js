@@ -1,21 +1,23 @@
-export const projects = [
+export const projects = [ 
     {
       title: "Petra",
       description:
-        " is an E-Commerce built with React.js, it brings the information from a Rest API and when ready divide them into components, each component handles the information using React Hooks. Redux is used to share information between each component.",
+        "A React.js E-Commerce site, efficiently fetches and organizes data from a Rest API using React Hooks within distinct components, all seamlessly connected through Redux.",
       image: 'assets/Petra.png',
       link: "https://codealo-commerce.vercel.app/",
       code: "https://github.com/JohadToledo/React-Ecommerce",
-      technologies : ['REST API', 'React', 'Redux' ]
+      technologies : [ 'SiReact', 'SiRedux','SiReactrouter', 'SiBootstrap',],
     },
     {
       title: "To Buy List",
       description:
-        " is like a To-Do list app which permits making a list of different sorts of whishes that people may want to buy. It is built with Vanilla JavaScript, HTML and Vanilla CSS.",
+        "It's a wishlist app crafted with Vanilla JavaScript, HTML, and CSS, allowing users to create lists for various desired items.",
       image: 'assets/Tobuylist.png',
       link: "https://tobuylist.web.app/",
       code: "https://github.com/JohadToledo/ToBuyList",
-      technologies : ['CSS', 'JavaScript', 'HTML' ]
+      technologies : ['SiJavascript', 'SiCss3', 'SiHtml5' ],
+
+
     },
     {
       title: "Google Clone",
@@ -24,7 +26,7 @@ export const projects = [
       image: 'assets/troogle.png',
       link: "https://troogle.web.app/",
       code: "https://github.com/JohadToledo/SummerHack/tree/master/Reto3",
-      technologies : ['CSS', 'HTML' ]
+      technologies : ['SiCss3', 'SiHtml5' ],
     },
     // {
     //   title: "Epic Todo App",
@@ -32,7 +34,7 @@ export const projects = [
     //     " Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
     //   image: 'assets/troogle.png',
     //   link: "https://pythonbootcamp.com",
-    //   technologies : ['CSS', 'JavaScript', 'HTML' ]
+    //   technologies : ['CSS', 'JavaScript', 'HTML' ],
     // },
   ];
 

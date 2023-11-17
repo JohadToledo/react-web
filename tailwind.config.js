@@ -37,7 +37,8 @@ export default {
         'darkgrey':'#484660',
         'aqua': '#83D6BB',
         'card': '#2b2a4d',
-        'lightcard':'#2d2d53'
+        'lightcard':'#2d2d53',
+        'bg-dark': '#0e1016'
       },
       fontFamily: {
         'display': 'Inter',
