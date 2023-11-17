@@ -1,5 +1,4 @@
 import { Link } from 'react-scroll'
-// import reactsvg from '../../public/assets/react.svg'
 import downloadImg from '../../public/assets/download.png'
 import Social from './Social';
 import Typewriter from './Typewriter';
@@ -12,10 +11,10 @@ import Particles from './Particles';
 
 export function Home(){
       const downloadFileAtURL = () => {
-          const pdfUrl = '/assets/JohadToledoCV-23.pdf';
+          const pdfUrl = '/assets/JohadToledo-CV23.pdf';
           const link = document.createElement('a');
           link.href = pdfUrl;
-          link.download = 'JohadToledoCV-23.pdf'; 
+          link.download = 'JohadToledo-CV23.pdf'; 
           link.target = '_blank'; 
           link.rel = 'resume';
           link.click();

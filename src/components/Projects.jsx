@@ -3,7 +3,7 @@
   import Grainy from "./Grainy";
   import {SiGithub} from "react-icons/si";
   import {BsLink45Deg} from "react-icons/bs";
-  import { SiCplusplus, SiReact, SiRedux, SiHtml5, SiCss3, SiJavascript, SiBootstrap, SiReactrouter } from "react-icons/si";
+  import { SiCplusplus, SiReact, SiRedux, SiHtml5, SiCss3, SiJavascript, SiBootstrap, SiReactrouter, SiFramer } from "react-icons/si";
   
   export function Projects() {
     const fadeInRefs = [useRef(null), useRef(null), useRef(null)];
@@ -42,6 +42,7 @@
       SiJavascript: SiJavascript,
       SiBootstrap: SiBootstrap,
       SiReactrouter: SiReactrouter,
+      SiFramer:SiFramer,
   
   
       // Add more icons as needed
@@ -96,8 +97,8 @@
                     </div>
                     <div
                     className={`absolute flex flex-col items-center text-white top-24  md:mr-12 lg:top-48 lg:ml-4 mb-10 md:mb-16 lg:mb-14 ${
-                      index % 2 === 0 ?  'right-0 m-0 m-auto sm:right-14 md:right-0 md:ml-0 lg:right-10 lg:top-60 lg:mr-4 mb-10  md:mb-16 lg:mb-14' :
-                                         'left-0 m-0 m-auto md:mr-12 lg:top-52 lg:ml-4 mb-10  md:mb-16 lg:mb-14 ' 
+                      index % 2 === 0 ?  'right-0 m-0 m-auto sm:right-14 md:right-0 md:ml-0 lg:right-10 lg:top-48 lg:mr-4 mb-10  md:mb-16 lg:mb-14' :
+                                         'left-0 m-0 m-auto md:mr-12 lg:top-48 lg:ml-4 mb-10  md:mb-16 lg:mb-14 ' 
                       }`}
                     
                     >

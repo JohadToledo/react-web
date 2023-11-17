@@ -10,12 +10,17 @@ const Blur = () => {
         const bottomThreshold = bodyHeight - windowHeight - 25;
 
         const opacity = scrollY >= bottomThreshold ? 0 : 1;
+
+        console.log({
+            scrollY, windowHeight, bodyHeight, opacity, bottomThreshold
+        })
         setScrollOpacity(opacity);
     };
 
     useEffect(() => {
 
         const handleScrollEvent = () => {
+            console.log("scroll event fired");
             handleScroll();
         };
 

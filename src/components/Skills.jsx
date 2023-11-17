@@ -1,6 +1,6 @@
 import {
     SiReact, SiJavascript, SiGooglefonts, SiGithub, SiGooglechrome, SiGit, SiFigma, SiTailwindcss, SiCss3, SiHtml5,
-    SiNodedotjs, SiTypescript,
+    SiNodedotjs, SiTypescript, SiFramer,
   } from "react-icons/si";
   
   
@@ -15,9 +15,9 @@ import {
                   Tools</h1>
                   <div className="mx-auto w-[100%] lg:max-w-[1200px] justify-center">
                       <div className="mb-10 flex w-[100%] flex-col gap-4 text-[18px] font-bold leading-relaxed tracking-wide text-[#e4ded7] md:mb-16 md:gap-6 md:text-[40px] md:leading-relaxed lg:mb-16 lg:w-[50%]">
-                          <h3>Tech</h3>
+                          {/* <h3>Tech</h3> */}
                           <div>
-                              <div className="grid grid-cols-5 gap-4" 
+                              <div className="grid grid-cols-5 gap-10" 
                               
                               >
                                   <SiJavascript size={50}/>
@@ -32,6 +32,7 @@ import {
                                   <SiGooglechrome size={50}/>
                                   <SiGooglefonts size={50}/>
                                   <SiNodedotjs size={50}/>
+                                  <SiFramer size={50}/>
                                   
                                   
                               </div>
