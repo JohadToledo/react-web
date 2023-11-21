@@ -11,10 +11,10 @@ import Particles from './Particles';
 
 export function Home(){
       const downloadFileAtURL = () => {
-          const pdfUrl = '/assets/JohadToledo-CV23.pdf';
+          const pdfUrl = '/assets/JohadToledoCV23.pdf';
           const link = document.createElement('a');
           link.href = pdfUrl;
-          link.download = 'JohadToledo-CV23.pdf'; 
+          link.download = 'JohadToledoCV23.pdf'; 
           link.target = '_blank'; 
           link.rel = 'resume';
           link.click();
